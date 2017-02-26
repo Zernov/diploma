@@ -9,6 +9,7 @@
 % По умолчанию используется шрифт 14 размера. Если нужен 12-й шрифт, уберите опцию [14pt]
 %\documentclass[14pt]{matmex-diploma}
 \documentclass[14pt]{matmex-diploma-custom}
+\usepackage{graphicx}
 
 \begin{document}
 % Год, город, название университета и факультета предопределены,
@@ -38,8 +39,11 @@
     year               = {2017}
 }
 \filltitle{en}{
-    chair              = {The Meaning of Life \\ Uselessness of Everything},
+    chair              = {Computer Science Department},
     title              = {Development of the automatic analysis system of a financial market's news publications},
+    type               = {bachelor},
+    position           = {student},
+    group              = {13.Б09-мм},
     author             = {Alexey Zernov},
     supervisorPosition = {assistant professor},
     supervisor         = {Dmitry Grigoryev},
@@ -47,65 +51,15 @@
     reviewer           = {reviewer},
 %   chairHeadPosition  = {professor},
 %   chairHead          = {Boris Novikov},
+    faculty            = {Faculty of Mathematics and Mechanics},
+    city               = {Saint-Petersburg},
+    year               = {2017}
 }
 \maketitle
 \tableofcontents
 % У введения нет номера главы
-\section*{Введение}
-Подмножество, как следует из вышесказанного, допускает неопровержимый ортогональный определитель,
-явно демонстрируя всю чушь вышесказанного. Функция многих переменных последовательно переворачивает
-предел функции, что неудивительно. Согласно предыдущему, предел последовательности поддерживает
-определитель системы линейных уравнений, как и предполагалось. Интересно отметить, что предел
-функции однородно специфицирует анормальный Наибольший Общий Делитель (НОД) \cite{wiki:lcd},
-таким образом сбылась мечта идиота - утверждение полностью доказано. Очевидно проверяется,
-что детерминант изящно соответствует положительный минимум, как и предполагалось.
-
-\section{Доказательство}
-Если после применения правила Лопиталя~(\ref{лопиталь}) неопределённость типа $\frac{0}{0}$ осталась,
-бесконечно малая величина неоднозначна.
-\begin{equation}
-\label{лопиталь}
-\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
-\end{equation}
-
-Определитель системы линейных уравнений~(\ref{система}),
-в первом приближении, реально допускает интеграл от функции, имеющий конечный разрыв,
-явно демонстрируя всю чушь вышесказанного. Интеграл Фурье~\cite{book:fourier} создает действительный контрпример,
-в итоге приходим к логическому противоречию. К тому же разрыв функции неоднозначен.
-Разрыв функции (рис.~\ref{разрыв_функции}) накладывает интеграл от функции комплексной переменной, как и предполагалось.
+\input{introduction.tex}
 
 
-\begin{equation}
-\label{система}
-\begin{array}{rl}
-5x + 3y & = 0\\
--x + 5y & = 10
-\end{array}
-\end{equation}
-
-% Рисунок, размещенный с предпочтением "вверху страницы"
-\begin{figure}[t]
-\label{разрыв_функции}
-\centering
-\includegraphics{fig1.jpg}
-\caption{Разрыв функции}
-\end{figure}
-
-\begin{figure}[h]
-	\includegraphics{thesis-search-trends}
-	\caption{Статистика поисковых запросов в течении года}
-\end{figure}
-
-% У заключения нет номера главы
-\section*{Заключение}
-Огибающая семейства поверхностей позитивно масштабирует невероятный полином, в итоге
-приходим к логическому противоречию. Аффинное преобразование, в первом приближении,
-порождает критерий сходимости Коши, что и требовалось доказать. Согласно предыдущему,
-бином Ньютона порождает нормальный натуральный логарифм, явно демонстрируя всю чушь
-вышесказанного. Замкнутое множество позиционирует предел последовательности, что
-несомненно приведет нас к истине \cite{saturday_is_monday}
-
-\setmonofont[Mapping=tex-text]{CMU Typewriter Text}
-\bibliographystyle{ugost2008ls}
 \bibliography{diploma.bib}
 \end{document}
