@@ -1,0 +1,7 @@
+===ibm watson===
+http://www.ibm.com/watson/developercloud/starter-kits.html
+----------------
+
+===обзор===
+https://www.osp.ru/os/2014/01/13039687/
+-----------
