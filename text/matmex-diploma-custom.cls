@@ -311,3 +311,7 @@
 
 \let\savenumberline\numberline
 \def\numberline#1{\savenumberline{#1.}}
+
+%%%
+\usepackage{graphicx}
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
