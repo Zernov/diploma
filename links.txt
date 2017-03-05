@@ -13,3 +13,11 @@ http://www.mlg.ru/solutions/pr/analysis/
 ===анализ===
 http://hrazvedka.ru/category/poisk_soft
 ------------
+
+===microsoft===
+https://www.microsoft.com/cognitive-services/en-us/text-analytics/documentation
+---------------
+
+===list===
+https://en.wikipedia.org/wiki/List_of_text_mining_software
+----------

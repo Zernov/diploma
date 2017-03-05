@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.2.24)  4 MAR 2017 02:59
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.2.24)  5 MAR 2017 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,22 +979,22 @@ c].
 . \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
 . \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
 .................................................
- [5])
-(./diploma.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+ [5] [6])
+(./tools.tex [7]) (./diploma.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./diploma.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 55.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 22358 strings out of 493589
- 403490 string characters out of 6148800
- 427275 words of memory out of 5000000
+ 22361 strings out of 493589
+ 403515 string characters out of 6148800
+ 428275 words of memory out of 5000000
  25555 multiletter control sequences out of 15000+600000
  5772 words of font info for 71 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  53i,11n,68p,10389b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diploma.pdf (6 pages).
+Output written on diploma.pdf (8 pages).
