@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\hbox to.8em{--\hss--}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em\fi
+\cyrdash\hskip.2em\ignorespaces}
+
+\bibitem{pymorphy2}
+\selectlanguageifdefined{english}
+\BibEmph{Korobov~Mikhail}.
+  \href{http://dx.doi.org/10.1007/978-3-319-26123-2_31}{Morphological Analyzer
+  and Generator for Russian and Ukrainian Languages}~// Analysis of Images,
+  Social Networks and Texts~/ Ed.\ by\ Mikhail~Yu.~Khachay,
+  Natalia~Konstantinova, Alexander~Panchenko et~al. \BibDash
+\newblock Springer International Publishing, 2015. \BibDash
+\newblock Vol.~542 of \BibEmph{Communications in Computer and Information
+  Science}. \BibDash
+\newblock P.~320--332. \BibDash
+\newblock URL: \BibUrl{http://dx.doi.org/10.1007/978-3-319-26123-2_31}.
+
+\end{thebibliography}
