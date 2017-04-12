@@ -14,4 +14,8 @@
 \contentsline {subsection}{\numberline {2.3}Томита-парсер}{9}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Яндекс.Спеллер}{9}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}OntosMiner}{9}{subsection.2.5}
-\contentsline {section}{Список литературы}{10}{section*.3}
+\contentsline {section}{\numberline {3}Новостные источники}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}finanz.ru}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}mdf.ru}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Экономические известия}{10}{subsection.3.3}
+\contentsline {section}{Список литературы}{11}{section*.3}

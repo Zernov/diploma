@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  10 MAR 2017 18:23
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  26 MAR 2017 12:10
 entering extended mode
 **./diploma.tex
 (diploma.tex
@@ -1012,9 +1012,9 @@ Overfull \hbox (2.17497pt too wide) in paragraph at lines 33--34
 рфографии в текстах
  []
 
-)
-LaTeX Info: Redefining \ttfamily on input line 55.
- (diploma.bbl [9]
+) (news.tex [9])
+LaTeX Info: Redefining \ttfamily on input line 57.
+ (diploma.bbl [10]
 Underfull \hbox (badness 1442) in paragraph at lines 16--26
 \TU/CMUSerif(1)/m/n/14.4 Alexander Panchenko et al. []  Springer International 
 Publishing,
@@ -1027,20 +1027,20 @@ Underfull \hbox (badness 4872) in paragraph at lines 16--26
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
  (diploma.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 18639 strings out of 427899
- 346729 string characters out of 3153117
+ 18642 strings out of 427899
+ 346749 string characters out of 3153117
  430520 words of memory out of 3000000
  22367 multiletter control sequences out of 15000+200000
  5740 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,11n,70p,10391b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on diploma.pdf (10 pages).
+Output written on diploma.pdf (11 pages).
