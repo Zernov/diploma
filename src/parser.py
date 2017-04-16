@@ -4,19 +4,15 @@ import re
 import time
 import functools
 import html2text
-import sys
-import os
 
-from sys import argv
 from bs4 import BeautifulSoup
-from itertools import chain
-
-def printProgress(current, total, new_line = False):
-    print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = '\n' if new_line else '\r')
 
 class MFD:
     domain = 'http://mfd.ru'
     prefix = 'http://mfd.ru/news/company/view/?id='
+
+    def printProgress(self, current, total, new_line = False):
+        print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = '\n' if new_line else '\r')
 
     def getNews(self, company, output):
         url = self.prefix + company
@@ -27,7 +23,7 @@ class MFD:
         news = {}
 
         for item in data:
-            printProgress(current, total)
+            self.printProgress(current, total)
             item_url = self.domain + item.get('href')
             item_page = urllib.request.urlopen(item_url)
             item_data = BeautifulSoup(item_page, 'lxml').find('div', { 'class' : 'm-content' }).findAll('p')
@@ -42,7 +38,7 @@ class MFD:
             current += 1
             time.sleep(0.1)
 
-        printProgress(current, total, True)
+        self.printProgress(current, total, True)
         print('Complete!')
 
         output_file = open(output, 'w+')
@@ -70,27 +66,5 @@ class MFD:
 
         return news
 
-source = 'mfd'
-company = '1'
-output = 'output.txt'
-
-i = 1
-while i < len(sys.argv):
-    if sys.argv[i] == '-s':
-        source = sys.argv[i + 1]
-    elif sys.argv[i] == '-c':
-        company = sys.argv[i + 1]
-    elif sys.argv[i] == '-o':
-        output = sys.argv[i + 1]
-    i += 2
-
-print('Parsing data from {}.\nOutput file: \"{}\"'.format(str(source), str(output)))
-
-news = {}
-
-if source == 'mfd':
-    mfd = MFD()
-    news = mfd.getNews(company, output)
-
-for item in news:
-    print(str(item) + ' : ' + str(news[item]) + '\n')
+#for item in news:
+#    print(str(item) + ' : ' + str(news[item]) + '\n')
