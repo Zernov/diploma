@@ -7,12 +7,12 @@ import html2text
 
 from bs4 import BeautifulSoup
 
+def printProgress(current, total, new_line = False):
+    print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = '\n' if new_line else '\r')
+
 class MFD:
     domain = 'http://mfd.ru'
     prefix = 'http://mfd.ru/news/company/view/?id='
-
-    def printProgress(self, current, total, new_line = False):
-        print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = '\n' if new_line else '\r')
 
     def getNews(self, company, output):
         url = self.prefix + company
@@ -23,7 +23,7 @@ class MFD:
         news = {}
 
         for item in data:
-            self.printProgress(current, total)
+            printProgress(current, total)
             item_url = self.domain + item.get('href')
             item_page = urllib.request.urlopen(item_url)
             item_data = BeautifulSoup(item_page, 'lxml').find('div', { 'class' : 'm-content' }).findAll('p')
@@ -38,7 +38,7 @@ class MFD:
             current += 1
             time.sleep(0.1)
 
-        self.printProgress(current, total, True)
+        printProgress(current, total, True)
         print('Complete!')
 
         output_file = open(output, 'w+')
@@ -55,16 +55,16 @@ class MFD:
 
         return news
 
-    def readNews(input):
-        input_file = open(str(input), 'r')
-        data = file.read()
-        news = {}
+def readNews(path):
+    temp = open(path, 'r')
+    data = temp.read()
+    news = {}
 
-        for item in data.split('\n\n\n'):
-            split = item.split('\n\n')
-            news.update({ split[0] : split[1] })
+    for item in data.split('\n\n\n'):
+        split = item.split('\n\n')
+        news.update({ split[0] : split[1] })
 
-        return news
+    return news
 
 #for item in news:
 #    print(str(item) + ' : ' + str(news[item]) + '\n')
