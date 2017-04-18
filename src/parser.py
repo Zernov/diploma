@@ -52,6 +52,3 @@ def readNews(path):
         news.update({ split[0] : split[1] })
 
     return news
-
-#for item in news:
-#    print(str(item) + ' : ' + str(news[item]) + '\n')
