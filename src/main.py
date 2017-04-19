@@ -1,53 +1,22 @@
-import parser
-import pretty
-import sys
-import morph
-import pretty
+from news_getter import getNews
+from news_getter import writeNews
+from news_getter import readNews
 
+from stock_getter import getStock
+from stock_getter import writeStock
+from stock_getter import readStock
 
-from parser import MFD
-from parser import readNews
-from pretty import groupArgs
-from pretty import writeData
 from sys import argv
-from morph import normalizeString
-from pretty import printProgress
 
-args = groupArgs(sys.argv)
+company = '1'
+amount = 300
+datef = '28/03/2017'
+datet = '19/04/2017'
 
-def parse():
-    print('Parsing news from {}.\nOutput file: \"{}\"'.format(args['-s'], args['-o']))
-    if args['-s'] == 'mfd':
-        source = MFD()
+#news = getNews(company, amount)
+#writeNews(news, 'D:\\Projects\\Diploma\\src\\news\\{}.txt'.format(company))
+#news = readNews('D:\\Projects\\Diploma\\src\\news\\{}.txt'.format(company))
 
-    if source != None:
-        news = source.getNews(args['-c'])
-
-    writeData(news, args['-o'])
-    return news
-
-def read():
-    print('Reading news from {}.'.format(args['-i']))
-    news = readNews(args['-i'])
-    return news
-
-def norm(data):
-    print('Normalizing news from {}.\nOutput file: {}'.format(args['-i'] if args.get('-i') != None else args['-s'], args['-n']))
-    news = {}
-    i = 0
-    for item in data:
-        news.update({ item : normalizeString(data[item]) })
-        printProgress(i, len(data))
-        i += 1
-
-    printProgress(i, len(data), True)
-    writeData(news, args['-n'])
-    return news
-
-if args['-'] == 'p':
-    news = parse()
-elif args['-'] == 'r':
-    news = read()
-
-if args.get('-n') != None:
-    norm(news)
+#stock = getStock(company, datef, datet)
+#writeStock(stock, 'D:\\Projects\\Diploma\\src\\stocks\\{}.txt'.format(company))
+#stock = readStock('D:\\Projects\\Diploma\\src\\stocks\\{}.txt'.format(company))
