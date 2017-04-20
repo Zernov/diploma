@@ -11,12 +11,12 @@ def getStock(company, date_from, date_to):
     em = '3'
     dfs = date_from.split('/')
     df = dfs[0].strip('0')
-    mf = str(int(dfs[1].strip('0')) - 1)
+    mf = str(int(dfs[1].lstrip('0')) - 1)
     yf = dfs[2]
     datef = dfs[0] + '.' + dfs[1] + '.' + dfs[2]
     dts = date_to.split('/')
     dt = dts[0].strip('0')
-    mt = str(int(dts[1].strip('0')) - 1)
+    mt = str(int(dts[1].lstrip('0')) - 1)
     yt = dts[2]
     datet = dts[0] + '.' + dts[1] + '.' + dts[2]
 
