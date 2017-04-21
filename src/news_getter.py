@@ -7,7 +7,7 @@ import csv
 
 def printProgress(current, total, done = False):
 
-    print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = '\nDone!\n' if done else '\n')
+    print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = 'r')
 
 def downloadNews(company, amount):
 
@@ -22,6 +22,8 @@ def downloadNews(company, amount):
     company = str(company)
     page_count = amount // 50
     last_page = amount % 50
+
+    print('Downloading news...')
 
     while page_number <= page_count:
 
@@ -70,7 +72,8 @@ def downloadNews(company, amount):
 
         page_number += 1
 
-    printProgress(amount, amount, True)
+    printProgress(amount, amount)
+    print('Done!')
 
     return dates[::-1], news[::-1], count
 

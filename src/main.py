@@ -1,4 +1,4 @@
-#===Import===#
+#region Import
 from news_getter import downloadNews
 from news_getter import writeNews
 from news_getter import readNews
@@ -10,30 +10,35 @@ from stock_getter import readStock
 from stemmer import stem
 from keras.preprocessing import sequence
 from keras.preprocessing.text import Tokenizer
+#endregion
 
-#===System===#
+#region System
 #path = 'D:\\Projects\\Diploma\\src\\'
 path = '/home/zernov/Documents/Projects/diploma/src/'
+#endregion
 
-#===Data===#
+#region Data
 company = '1'
 amount = 5
-datef = '09/02/2017'
-datet = '20/04/2017'
+datef = '20/04/2017'
+datet = '21/04/2017'
+#endregion
 
-#===Learning===#
+#region Learning
 tokenizer = Tokenizer()
+#endregion
 
-#===News Getter===#
+#region News Getter
 #dates, news, count = downloadNews(company, amount)
 #writeNews(dates, news, count, path + 'news/{}.csv'.format(company))
-dates, news, count = readNews(path + 'news/{}.csv'.format(company))
+#dates, news, count = readNews(path + 'news/{}.csv'.format(company))
+#endregion
 
-#===Stock Getter===#
-#stock = downloadStock(company, datef, datet)
-#writeStock(stock, path + 'stocks/{}.txt'.format(company))
-#stock = readStock(path + 'stocks/{}.txt'.format(company))
-
+#region Stock Getter
+#dates, stocks, count = downloadStock(company, datef, datet)
+#writeStock(dates, stocks, count, path + 'stocks/{}.csv'.format(company))
+#dates, stocks, count = readStock(path + 'stocks/{}.csv'.format(company))
+#endregion
 
 #news_group = groupNews(news)
 #news_stem = {}
