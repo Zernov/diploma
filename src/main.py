@@ -8,6 +8,7 @@ from stock_getter import writeStock
 from stock_getter import readStock
 
 from stemmer import stem
+
 from keras.preprocessing import sequence
 from keras.preprocessing.text import Tokenizer
 #endregion
@@ -40,6 +41,13 @@ tokenizer = Tokenizer()
 #dates, stocks, count = readStock(path + 'stocks/{}.csv'.format(company))
 #endregion
 
+#region Stemmer
+#news_stems = stem(news, count)
+#writeNews(dates, news_stems, count, path + 'stems/{}.csv'.format(company))
+#endregion
+
+#region todo
+'''
 #news_group = groupNews(news)
 #news_stem = {}
 
@@ -57,3 +65,5 @@ tokenizer = Tokenizer()
 
 #tokenizer.fit_on_texts(texts)
 #news_sequences = tokenizer.texts_to_sequences(texts)
+'''
+#endregion

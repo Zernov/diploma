@@ -1,13 +1,13 @@
-from bs4 import BeautifulSoup
 from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 import time
 import datetime
 import csv
 
-def printProgress(current, total, done = False):
+def printProgress(current, total, new_line = False):
 
-    print('[{}%] {}/{}'.format(str(int(100 * current / total)), str(current), str(total)), end = 'r')
+    print('\r[{}%] {}/{}{}'.format(str(int(100 * current / total)), str(current), str(total), '' if not new_line else '\n'), end = '')
 
 def downloadNews(company, amount):
 
@@ -72,7 +72,7 @@ def downloadNews(company, amount):
 
         page_number += 1
 
-    printProgress(amount, amount)
+    printProgress(amount, amount, True)
     print('Done!')
 
     return dates[::-1], news[::-1], count
