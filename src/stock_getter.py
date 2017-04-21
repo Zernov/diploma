@@ -58,16 +58,3 @@ def readStock(path):
         stock.append((split[0][1:], split[1], split[2], split[3], split[4][:-1]))
 
     return stock
-
-def getStockChanges(stock, date_from, date_to):
-
-    stock_from = 1
-    stock_to = 1
-
-    for item in stock:
-        if item[0] == date_from:
-            stock_from = item[1]
-        if item[0] == date_to:
-            stock_to = item[1]
-
-    return (float(stock_to) - float(stock_from)) / float(stock_from)

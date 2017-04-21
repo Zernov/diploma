@@ -3,6 +3,7 @@ from urllib.request import urlopen
 
 import time
 import datetime
+import csv
 
 def printProgress(current, total, done = False):
 
@@ -14,7 +15,9 @@ def downloadNews(company, amount):
     prefix = 'http://mfd.ru/news/company/view/?id='
     suffix = '&page='
     page_number = 0
+    dates = []
     news = []
+    count = 0
     amount = int(amount)
     company = str(company)
     page_count = amount // 50
@@ -58,7 +61,9 @@ def downloadNews(company, amount):
             item_string = item_string.strip()
 
             if item_string != '':
-                news.append((item_date, item_string))
+                dates.append(item_date)
+                news.append(item_string)
+                count += 1
 
             current += 1
             time.sleep(0.1)
@@ -67,60 +72,27 @@ def downloadNews(company, amount):
 
     printProgress(amount, amount, True)
 
-    return news[::-1]
+    return dates[::-1], news[::-1], count
 
-def writeNews(news, output):
+def writeNews(dates, news, count, output):
 
-    output_file = open(output, 'w+', encoding = 'utf8')
+    with open(output, 'w+', encoding = 'utf8') as csvfile:
+        writer = csv.writer(csvfile)
 
-    i = 0
-    for (date, text) in news:
-        if i != (len(news) - 1):
-            output_file.write('\"{}\",\"{}\"\n'.format(date, text))
-        else:
-            output_file.write('\"{}\",\"{}\"'.format(date, text))
-        i += 1
-
-    output_file.close()
+        for i in range(count):
+            writer.writerow([dates[i], news[i]])
 
 def readNews(path):
 
-    temp = open(path, 'r', encoding = 'utf8')
-    data = temp.read()
-    news = []
+    with open(path, 'r', encoding = 'utf8') as csvfile:
+        reader = csv.reader(csvfile)
+        dates = []
+        news = []
+        count = 0
 
-    for item in data.split('\n'):
-        split = item.split('\",\"')
-        news.append((split[0][1:], split[1][:-1]))
+        for row in reader:
+            dates.append(row[0])
+            news.append(row[1])
+            count += 1
 
-    return news
-
-def getDates(news):
-
-    dates = []
-
-    for (date, text) in news:
-        if date not in dates:
-            dates.append(date)
-
-    return dates
-
-def getNews(news, date):
-
-    result = []
-
-    for item in news:
-        if item[0] == date:
-            result.append(item[1])
-
-    return result
-
-def groupNews(news):
-
-    result = {}
-    dates = getDates(news)
-
-    for date in dates:
-        result.update({ date : getNews(news,date) })
-
-    return result
+    return dates, news, count
