@@ -3,9 +3,9 @@ from news_getter import downloadNews
 from news_getter import writeNews
 from news_getter import readNews
 
-from stock_getter import downloadStock
-from stock_getter import writeStock
-from stock_getter import readStock
+from stocks_getter import downloadStock
+from stocks_getter import writeStock
+from stocks_getter import readStock
 
 from stemmer import stem
 
@@ -19,10 +19,10 @@ path = '/home/zernov/Documents/Projects/diploma/src/'
 #endregion
 
 #region Data
-company = '1'
-amount = 5
-datef = '20/04/2017'
-datet = '21/04/2017'
+company = 'sberbank'
+#amount = 1000
+#datef = '13/02/2017'
+#datet = '21/04/2017'
 #endregion
 
 #region Learning
@@ -30,20 +30,21 @@ tokenizer = Tokenizer()
 #endregion
 
 #region News Getter
-#dates, news, count = downloadNews(company, amount)
-#writeNews(dates, news, count, path + 'news/{}.csv'.format(company))
-#dates, news, count = readNews(path + 'news/{}.csv'.format(company))
+#news_dates, news, news_count = downloadNews(company, amount)
+#writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
+news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
 #endregion
 
 #region Stock Getter
-#dates, stocks, count = downloadStock(company, datef, datet)
-#writeStock(dates, stocks, count, path + 'stocks/{}.csv'.format(company))
-#dates, stocks, count = readStock(path + 'stocks/{}.csv'.format(company))
+#stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
+#writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
+stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
 #endregion
 
 #region Stemmer
-#news_stems = stem(news, count)
-#writeNews(dates, news_stems, count, path + 'stems/{}.csv'.format(company))
+#stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+#writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
+stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
 #endregion
 
 #region todo

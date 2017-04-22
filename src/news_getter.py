@@ -15,11 +15,15 @@ def downloadNews(company, amount):
     prefix = 'http://mfd.ru/news/company/view/?id='
     suffix = '&page='
     page_number = 0
-    dates = []
+    news_dates = []
     news = []
-    count = 0
+    news_count = 0
+
+    if company == 'sberbank':
+        company = '1'
+    elif company == 'gazprom':
+        company = '3'
     amount = int(amount)
-    company = str(company)
     page_count = amount // 50
     last_page = amount % 50
 
@@ -63,39 +67,39 @@ def downloadNews(company, amount):
             item_string = item_string.strip()
 
             if item_string != '':
-                dates.append(item_date)
+                news_dates.append(item_date)
                 news.append(item_string)
-                count += 1
+                news_count += 1
 
             current += 1
-            time.sleep(0.1)
+            time.sleep(0.01)
 
         page_number += 1
 
     printProgress(amount, amount, True)
     print('Done!')
 
-    return dates[::-1], news[::-1], count
+    return news_dates[::-1], news[::-1], news_count
 
-def writeNews(dates, news, count, output):
+def writeNews(news_dates, news, news_count, output):
 
     with open(output, 'w+', encoding = 'utf8') as csvfile:
         writer = csv.writer(csvfile)
 
-        for i in range(count):
-            writer.writerow([dates[i], news[i]])
+        for i in range(news_count):
+            writer.writerow([news_dates[i], news[i]])
 
 def readNews(path):
 
     with open(path, 'r', encoding = 'utf8') as csvfile:
         reader = csv.reader(csvfile)
-        dates = []
+        news_dates = []
         news = []
-        count = 0
+        news_count = 0
 
         for row in reader:
-            dates.append(row[0])
+            news_dates.append(row[0])
             news.append(row[1])
-            count += 1
+            news_count += 1
 
-    return dates, news, count
+    return news_dates, news, news_count

@@ -11,19 +11,31 @@ from string import punctuation
 stemmer = RussianStemmer()
 stemmer.stopwords = stopwords.words('russian')
 
-def stem(news, count):
+def stem(news_dates, news, news_count):
 
-    result = []
+    stems_dates = []
+    [stems_dates.append(date) for date in news_dates if date not in stems_dates]
+    stems = []
+    stems_count = len(stems_dates)
+    i = 0
+    j = 0
 
-    for i in range(count):
-        temp = []
+    print('Stemming news...')
 
-        words = text_to_word_sequence(news[i], filters=''.join(punctuation) + '–—01234567890')
+    while i < stems_count:
+        stem = []
 
-        for word in words:
-            if word not in stemmer.stopwords:
-                temp.append(stemmer.stem(word))
+        while j < news_count and stems_dates[i] == news_dates[j]:
+            words = text_to_word_sequence(news[j], filters = ''.join(punctuation) + '–—01234567890')
+            for word in words:
+                if word not in stemmer.stopwords:
+                    stem.append(stemmer.stem(word))
 
-        result.append(' '.join(temp))
+            j += 1
 
-    return result
+        i += 1
+        stems.append(' '.join(stem))
+
+    print('Done!')
+
+    return stems_dates, stems, stems_count

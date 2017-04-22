@@ -6,12 +6,13 @@ def downloadStock(company, date_from, date_to):
 
     company = str(company)
 
-    if company == '1':
+    if company == 'sberbank':
         code = 'SBER'
-    else:
-        code = 'SBER'
+        em = '3'
+    elif company == 'gazprom':
+        code = 'GAZP'
+        em = '16842'
 
-    em = '3'
     dfs = date_from.split('/')
     df = dfs[0].lstrip('0')
     mf = str(int(dfs[1].lstrip('0')) - 1)
@@ -23,48 +24,45 @@ def downloadStock(company, date_from, date_to):
     yt = dts[2]
     datet = dts[0] + '.' + dts[1] + '.' + dts[2]
 
-    if company == '1':
-        cn = 'sberbank'
-    else:
-        cn = 'sberbank'
+    cn = company
 
     print('Downloading stocks...')
 
     url = 'http://export.finam.ru/stock.txt?market=1&em={}&code={}&apply=0&df={}&mf={}&yf={}&from={}&dt={}&mt={}&yt={}&to={}&p=8&f=stock_1&e=.txt&cn={}&dtf=4&tmf=3&MSOR=1&mstime=on&mstimever=1&sep=1&sep2=1&datf=5&at=1'.format(em, code, df, mf, yf, datef, dt, mt, yt, datet, cn)
-    dates = []
+    stocks_dates = []
     stocks = []
-    count = 0
+    stocks_count = 0
     data = urlopen(url).read().decode("utf-8").split('\r\n')
 
     for i in range(1, len(data) - 1):
         item_split = data[i].split(',')
-        dates.append(item_split[0])
+        stocks_dates.append(item_split[0])
         stocks.append(item_split[2])
-        count += 1
+        stocks_count += 1
 
     print('Done!')
 
-    return dates, stocks, count
+    return stocks_dates, stocks, stocks_count
 
-def writeStock(dates, stocks, count, output):
+def writeStock(stocks_dates, stocks, stocks_count, output):
 
     with open(output, 'w+', encoding = 'utf8') as csvfile:
         writer = csv.writer(csvfile)
 
-        for i in range(count):
-            writer.writerow([dates[i], stocks[i]])
+        for i in range(stocks_count):
+            writer.writerow([stocks_dates[i], stocks[i]])
 
 def readStock(path):
 
     with open(path, 'r', encoding = 'utf8') as csvfile:
         reader = csv.reader(csvfile)
-        dates = []
+        stocks_dates = []
         stocks = []
-        count = 0
+        stocks_count = 0
 
         for row in reader:
-            dates.append(row[0])
+            stocks_dates.append(row[0])
             stocks.append(row[1])
-            count += 1
+            stocks_count += 1
 
-    return dates, stocks, count
+    return stocks_dates, stocks, stocks_count
