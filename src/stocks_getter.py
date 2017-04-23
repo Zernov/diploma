@@ -1,3 +1,5 @@
+from helper import printProgress
+
 from urllib.request import urlopen
 
 import csv
@@ -35,11 +37,13 @@ def downloadStock(company, date_from, date_to):
     data = urlopen(url).read().decode("utf-8").split('\r\n')
 
     for i in range(1, len(data) - 1):
+        printProgress(stocks_count, len(data) - 1)
         item_split = data[i].split(',')
         stocks_dates.append(item_split[0])
         stocks.append(item_split[2])
         stocks_count += 1
 
+    printProgress(stocks_count, stocks_count, True)
     print('Done!')
 
     return stocks_dates, stocks, stocks_count

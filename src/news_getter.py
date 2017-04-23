@@ -1,13 +1,11 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
+from helper import printProgress
+
 import time
 import datetime
 import csv
-
-def printProgress(current, total, new_line = False):
-
-    print('\r[{}%] {}/{}{}'.format(str(int(100 * current / total)), str(current), str(total), '' if not new_line else '\n'), end = '')
 
 def downloadNews(company, amount):
 

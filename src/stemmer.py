@@ -1,3 +1,5 @@
+from helper import printProgress
+
 from nltk.stem.snowball import RussianStemmer
 from nltk.corpus import stopwords
 
@@ -5,15 +7,10 @@ from keras.preprocessing.text import text_to_word_sequence
 
 from string import punctuation
 
-import nltk
-nltk.download('stopwords')
-
+#import nltk
+#nltk.download('stopwords')
 stemmer = RussianStemmer()
 stemmer.stopwords = stopwords.words('russian')
-
-def printProgress(current, total, new_line = False):
-
-    print('\r[{}%] {}/{}{}'.format(str(int(100 * current / total)), str(current), str(total), '' if not new_line else '\n'), end = '')
 
 def stem(news_dates, news, news_count):
 
@@ -30,12 +27,12 @@ def stem(news_dates, news, news_count):
         stem = []
 
         while j < news_count and stems_dates[i] == news_dates[j]:
+            printProgress(i, stems_count)
             words = text_to_word_sequence(news[j], filters = ''.join(punctuation) + '–—01234567890')
             for word in words:
                 if word not in stemmer.stopwords:
                     stem.append(stemmer.stem(word))
 
-            printProgress(j, news_count)
             j += 1
 
         i += 1

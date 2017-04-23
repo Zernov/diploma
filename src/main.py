@@ -9,6 +9,10 @@ from stocks_getter import readStock
 
 from stemmer import stem
 
+from connector import connect
+from connector import writeConnections
+from connector import readConnections
+
 from keras.preprocessing import sequence
 from keras.preprocessing.text import Tokenizer
 #endregion
@@ -19,10 +23,10 @@ path = '/home/zernov/Documents/Projects/diploma/src/'
 #endregion
 
 #region Data
-company = 'sberbank'
-#amount = 1000
-#datef = '13/02/2017'
-#datet = '21/04/2017'
+company = 'gazprom'
+amount = 100
+datef = '13/02/2017'
+datet = '21/04/2017'
 #endregion
 
 #region Learning
@@ -30,21 +34,27 @@ tokenizer = Tokenizer()
 #endregion
 
 #region News Getter
-#news_dates, news, news_count = downloadNews(company, amount)
-#writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
-news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
+news_dates, news, news_count = downloadNews(company, amount)
+writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
+#news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
 #endregion
 
 #region Stock Getter
-#stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
-#writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
-stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
+stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
+writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
+#stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
 #endregion
 
 #region Stemmer
-#stems_dates, stems, stems_count = stem(news_dates, news, news_count)
-#writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
-stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
+stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
+#stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
+#endregion
+
+#region Connector
+connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
+writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
+#connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections/{}.csv'.format(company))
 #endregion
 
 #region todo
