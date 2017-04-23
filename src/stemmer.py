@@ -5,11 +5,15 @@ from keras.preprocessing.text import text_to_word_sequence
 
 from string import punctuation
 
-#import nltk
-#nltk.download('stopwords')
+import nltk
+nltk.download('stopwords')
 
 stemmer = RussianStemmer()
 stemmer.stopwords = stopwords.words('russian')
+
+def printProgress(current, total, new_line = False):
+
+    print('\r[{}%] {}/{}{}'.format(str(int(100 * current / total)), str(current), str(total), '' if not new_line else '\n'), end = '')
 
 def stem(news_dates, news, news_count):
 
@@ -31,11 +35,13 @@ def stem(news_dates, news, news_count):
                 if word not in stemmer.stopwords:
                     stem.append(stemmer.stem(word))
 
+            printProgress(j, news_count)
             j += 1
 
         i += 1
         stems.append(' '.join(stem))
 
+    printProgress(news_count, news_count, True)
     print('Done!')
 
     return stems_dates, stems, stems_count

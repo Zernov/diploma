@@ -1,5 +1,5 @@
 import csv
 
-def merge(dates, news, stocks):
+def merge(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
 
     return 0
