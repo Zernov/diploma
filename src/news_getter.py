@@ -6,6 +6,7 @@ from helper import printProgress
 import time
 import datetime
 import csv
+import sys
 
 def downloadNews(company, amount):
 
@@ -26,6 +27,7 @@ def downloadNews(company, amount):
     last_page = amount % 50
 
     print('Downloading news...')
+    sys.stdout.flush()
 
     while page_number <= page_count:
 
@@ -76,6 +78,7 @@ def downloadNews(company, amount):
 
     printProgress(amount, amount, True)
     print('Done!')
+    sys.stdout.flush()
 
     return news_dates[::-1], news[::-1], news_count
 

@@ -7,8 +7,11 @@ from keras.preprocessing.text import text_to_word_sequence
 
 from string import punctuation
 
+import sys
+
 #import nltk
 #nltk.download('stopwords')
+
 stemmer = RussianStemmer()
 stemmer.stopwords = stopwords.words('russian')
 
@@ -22,15 +25,16 @@ def stem(news_dates, news, news_count):
     j = 0
 
     print('Stemming news...')
+    sys.stdout.flush()
 
     while i < stems_count:
         stem = []
+        printProgress(i, stems_count)
 
         while j < news_count and stems_dates[i] == news_dates[j]:
-            printProgress(i, stems_count)
-            words = text_to_word_sequence(news[j], filters = ''.join(punctuation) + '–—01234567890')
+            words = text_to_word_sequence(news[j], filters = ''.join(punctuation) + '–—01234567890abcdefghijklmnopqrstuvwxyz')
             for word in words:
-                if word not in stemmer.stopwords:
+                if word not in stemmer.stopwords and word != ' ':
                     stem.append(stemmer.stem(word))
 
             j += 1
@@ -40,5 +44,6 @@ def stem(news_dates, news, news_count):
 
     printProgress(news_count, news_count, True)
     print('Done!')
+    sys.stdout.flush()
 
     return stems_dates, stems, stems_count

@@ -3,6 +3,7 @@ from helper import printProgress
 from urllib.request import urlopen
 
 import csv
+import sys
 
 def downloadStock(company, date_from, date_to):
 
@@ -29,6 +30,7 @@ def downloadStock(company, date_from, date_to):
     cn = company
 
     print('Downloading stocks...')
+    sys.stdout.flush()
 
     url = 'http://export.finam.ru/stock.txt?market=1&em={}&code={}&apply=0&df={}&mf={}&yf={}&from={}&dt={}&mt={}&yt={}&to={}&p=8&f=stock_1&e=.txt&cn={}&dtf=4&tmf=3&MSOR=1&mstime=on&mstimever=1&sep=1&sep2=1&datf=5&at=1'.format(em, code, df, mf, yf, datef, dt, mt, yt, datet, cn)
     stocks_dates = []
@@ -45,6 +47,7 @@ def downloadStock(company, date_from, date_to):
 
     printProgress(stocks_count, stocks_count, True)
     print('Done!')
+    sys.stdout.flush()
 
     return stocks_dates, stocks, stocks_count
 

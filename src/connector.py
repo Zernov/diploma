@@ -1,6 +1,7 @@
 from helper import printProgress
 
 import csv
+import sys
 
 def connect(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
 
@@ -24,6 +25,7 @@ def connect(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
         k += 1
 
     print('Connecting...')
+    sys.stdout.flush()
 
     while i < connections_count - 1:
         printProgress(i, connections_count - 1)
@@ -47,6 +49,7 @@ def connect(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
 
     printProgress(connections_count - 1, connections_count - 1, True)
     print('Done!')
+    sys.stdout.flush()
 
     return connections_dates[:-1], connections_news, connections_stocks, connections_count - 1
 
