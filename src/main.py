@@ -78,25 +78,25 @@ connections_dates, connections_news, connections_stocks, connections_count = rea
 #endregion
 
 #region Work
-tokenizer = Tokenizer(num_words = num_words)
-tokenizer.fit_on_texts(texts = connections_news)
+tokenizer = Tokenizer(num_words=num_words)
+tokenizer.fit_on_texts(texts=connections_news)
 
 total_dates = connections_dates
 total_news = tokenizer.texts_to_sequences(connections_news)
 total_stocks = connections_stocks
 total_count = connections_count
 
-total_news_sequence = sequence.pad_sequences(sequences = total_news)
+total_news_sequence = sequence.pad_sequences(sequences=total_news)
 
 border = int(connections_count * (1.0 - validation_split))
 
 training_dates = total_dates[:border]
-training_news = total_news[:border]
+training_news = total_news_sequence[:border]
 training_stocks = total_stocks[:border]
 training_count = border
 
 testing_dates = total_dates[border:]
-testing_news = total_news[border:]
+testing_news = total_news_sequence[border:]
 testing_stocks = total_stocks[border:]
 testing_count = total_count - border
 
@@ -107,18 +107,16 @@ testing_X = numpy.array(testing_news)
 testing_y = numpy.array(testing_stocks)
 
 model = Sequential()
-model.add(Embedding(input_dim = num_words, output_dim = dimension))
-model.add(LSTM(units = dimension))
-model.add(Dropout(rate = dropout_rate))
-model.add(Dense(units = 1, kernel_regularizer = l1_l2(l1 = l1_rate, l2 = l2_rate)))
-model.add(Activation(activation = 'sigmoid'))
-model.compile(optimizer = Adam(lr = l_rate), loss = 'binary_crossentropy', metrics = ['accuracy'])
+model.add(Embedding(input_dim=num_words, output_dim=dimension))
+model.add(LSTM(units=dimension))
+model.add(Dropout(rate=dropout_rate))
+model.add(Dense(units=1, kernel_regularizer=l1_l2(l1=l1_rate, l2=l2_rate)))
+model.add(Activation(activation='sigmoid'))
+model.compile(optimizer=Adam(lr=l_rate), loss='binary_crossentropy', metrics=['accuracy'])
 
-history = model.fit(training_X, training_y, batch_size = batch_size, epochs = epochs, validation_split = validation_split)
+history = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
 
-score = model.evaluate(testing_X, testing_y, batch_size = batch_size)
-
-print(score)
+score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
 
 
 #endregion
