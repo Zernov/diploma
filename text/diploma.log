@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  26 MAR 2017 12:10
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  1 MAY 2017 22:01
 entering extended mode
 **./diploma.tex
 (diploma.tex
@@ -958,63 +958,34 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(diploma.toc
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 4.
-)
+(diploma.toc)
 \tf@toc=\write4
 \openout4 = `diploma.toc'.
 
- (introduction.tex [3
+ [3
 
-]) (overview.tex [4]
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 5.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'CMUTypewriterText(1)' created for font 'CMU Typewriter Text'
-. with options
-. [WordSpace={1,0,0},PunctuationSpace=WordSpace,Mapping=tex-text,Script=Cyrilli
-c].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"CMU Typewriter
-. Text/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
-. - 'bold' (bx/n) with NFSS spec.: <->"CMU Typewriter
-. Text/B/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
-. - 'italic' (m/it) with NFSS spec.: <->"CMU Typewriter
-. Text/I/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
-. - 'bold italic' (bx/it) with NFSS spec.: <->"CMU Typewriter
-. Text/BI/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
-.................................................
- [5] [6]) (tools.tex
-[7] [8]
-Overfull \hbox (2.17497pt too wide) in paragraph at lines 33--34
-[]\TU/CMUSerif(1)/m/n/14.4 Яндекс.Спеллер[][][][][] выполняет задачу проверки о
-рфографии в текстах
- []
+] (introduction.tex) [4
 
-) (news.tex [9])
+] (financial_market.tex) [5
+
+]
+(text_analysis.tex) [6
+
+] (overview.tex) [7
+
+] (theory.tex) [8
+
+] (practical.tex)
+[9
+
+] (conclusion.tex)
 LaTeX Info: Redefining \ttfamily on input line 57.
- (diploma.bbl [10]
+ (diploma.bbl [10
+
+]
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 25.
+
 Underfull \hbox (badness 1442) in paragraph at lines 16--26
 \TU/CMUSerif(1)/m/n/14.4 Alexander Panchenko et al. []  Springer International 
 Publishing,
@@ -1035,11 +1006,11 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 18642 strings out of 427899
- 346749 string characters out of 3153117
- 430520 words of memory out of 3000000
- 22367 multiletter control sequences out of 15000+200000
- 5740 words of font info for 67 fonts, out of 3000000 for 9000
+ 18607 strings out of 427899
+ 345102 string characters out of 3153117
+ 425520 words of memory out of 3000000
+ 22341 multiletter control sequences out of 15000+200000
+ 5596 words of font info for 49 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,11n,70p,10391b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
 

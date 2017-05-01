@@ -1,21 +1,9 @@
 \select@language {russian}
 \contentsline {section}{Введение}{4}{section*.2}
-\contentsline {section}{\numberline {1}Обзор существующих решений}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}IBM: Watson Developer Cloud}{5}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}News Intelligence}{5}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Social Customer Care}{5}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}News Explorer}{6}{subsubsection.1.1.3}
-\contentsline {subsubsection}{\numberline {1.1.4}Investment Advisor}{6}{subsubsection.1.1.4}
-\contentsline {subsection}{\numberline {1.2}Microsoft: Text Analytics}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Медиалогия}{6}{subsection.1.3}
-\contentsline {section}{\numberline {2}Инструменты и методологии}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Natural Language Toolkit}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}pymorphy2}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Томита-парсер}{9}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Яндекс.Спеллер}{9}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}OntosMiner}{9}{subsection.2.5}
-\contentsline {section}{\numberline {3}Новостные источники}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}finanz.ru}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}mdf.ru}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Экономические известия}{10}{subsection.3.3}
-\contentsline {section}{Список литературы}{11}{section*.3}
+\contentsline {section}{\numberline {1}Финансовый рынок}{5}{section.1}
+\contentsline {section}{\numberline {2}Анализ текста}{6}{section.2}
+\contentsline {section}{\numberline {3}Обзор готовых решений}{7}{section.3}
+\contentsline {section}{\numberline {4}Теоретическая информация}{8}{section.4}
+\contentsline {section}{\numberline {5}Практическая часть}{9}{section.5}
+\contentsline {section}{Заключение}{10}{section*.3}
+\contentsline {section}{Список литературы}{11}{section*.4}

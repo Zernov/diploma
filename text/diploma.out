@@ -1,20 +1,8 @@
 \BOOKMARK [1][-]{section*.2}{Введение}{}% 1
-\BOOKMARK [1][-]{section.1}{Обзор существующих решений}{}% 2
-\BOOKMARK [2][-]{subsection.1.1}{IBM:\040Watson\040Developer\040Cloud}{section.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.1}{News\040Intelligence}{subsection.1.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.1.2}{Social\040Customer\040Care}{subsection.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.3}{News\040Explorer}{subsection.1.1}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.4}{Investment\040Advisor}{subsection.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.2}{Microsoft:\040Text\040Analytics}{section.1}% 8
-\BOOKMARK [2][-]{subsection.1.3}{Медиалогия}{section.1}% 9
-\BOOKMARK [1][-]{section.2}{Инструменты и методологии}{}% 10
-\BOOKMARK [2][-]{subsection.2.1}{Natural\040Language\040Toolkit}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.2}{pymorphy2}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.3}{Томита-парсер}{section.2}% 13
-\BOOKMARK [2][-]{subsection.2.4}{Яндекс.Спеллер}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.5}{OntosMiner}{section.2}% 15
-\BOOKMARK [1][-]{section.3}{Новостные источники}{}% 16
-\BOOKMARK [2][-]{subsection.3.1}{finanz.ru}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.2}{mdf.ru}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.3}{Экономические известия}{section.3}% 19
-\BOOKMARK [1][-]{section*.3}{Список литературы}{}% 20
+\BOOKMARK [1][-]{section.1}{Финансовый рынок}{}% 2
+\BOOKMARK [1][-]{section.2}{Анализ текста}{}% 3
+\BOOKMARK [1][-]{section.3}{Обзор готовых решений}{}% 4
+\BOOKMARK [1][-]{section.4}{Теоретическая информация}{}% 5
+\BOOKMARK [1][-]{section.5}{Практическая часть}{}% 6
+\BOOKMARK [1][-]{section*.3}{Заключение}{}% 7
+\BOOKMARK [1][-]{section*.4}{Список литературы}{}% 8
