@@ -43,7 +43,7 @@ def connect(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
             k += 1
 
         stocks_end = float(stocks[k])
-        connection_stocks = 100.0 * (stocks_end - stocks_start) / stocks_start
+        connection_stocks = 1 if stocks_end > stocks_start else 0
         connections_stocks.append(connection_stocks)
         i += 1
 

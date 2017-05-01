@@ -8,12 +8,49 @@ import datetime
 import csv
 import sys
 
-def downloadNews(company, amount):
+delay = 2
+delay_except = 20
 
-    domain = 'http://mfd.ru'
+def getTrs(company, amount):
+
     prefix = 'http://mfd.ru/news/company/view/?id='
     suffix = '&page='
     page_number = 0
+    trs = []
+
+    if company == 'sberbank':
+        company = '1'
+    elif company == 'gazprom':
+        company = '3'
+
+    amount = int(amount)
+    page_count = amount // 50
+    last_page = amount % 50
+
+    while page_number < page_count:
+
+        url = prefix + company + suffix + str(page_number)
+        page = urlopen(url)
+        tr = BeautifulSoup(page, 'html.parser').find('table', {'id': 'issuerNewsList'}).findAll('tr')
+        trs += tr
+        page_number += 1
+
+        time.sleep(delay)
+
+    if last_page != 0:
+
+        url = prefix + company + suffix + str(page_number)
+        page = urlopen(url)
+        tr = BeautifulSoup(page, 'html.parser').find('table', {'id': 'issuerNewsList'}).findAll('tr')
+        trs += tr[:last_page]
+
+        time.sleep(delay)
+
+    return trs
+
+def downloadNews(company, amount):
+
+    domain = 'http://mfd.ru'
     news_dates = []
     news = []
     news_count = 0
@@ -22,28 +59,19 @@ def downloadNews(company, amount):
         company = '1'
     elif company == 'gazprom':
         company = '3'
+
     amount = int(amount)
-    page_count = amount // 50
-    last_page = amount % 50
+    sys.stdout.flush()
+    trs = getTrs(company, amount)
+    total = len(trs)
+    current = 0
 
     print('Downloading news...')
-    sys.stdout.flush()
 
-    while page_number <= page_count:
-
-        url = prefix + company + suffix + str(page_number)
-        page = urlopen(url)
-        data = BeautifulSoup(page, 'html.parser').find('table', {'id': 'issuerNewsList'}).findAll('tr')
-        current = 0
-
-        if page_number < page_count:
-            total = len(data)
-        else:
-            total = last_page
-
-        for i in range(total):
-            printProgress(50 * page_number + current, amount)
-            td = data[i].findAll('td')
+    while current < total:
+        try:
+            printProgress(current, total)
+            td = trs[current].findAll('td')
             temp_date = td[0].getText().split(',')[0].strip()
 
             if temp_date == 'сегодня':
@@ -64,7 +92,7 @@ def downloadNews(company, amount):
             for j in range(1, len(item_data) - 2):
                 item_string += item_data[j].getText() + ' '
 
-            item_string = item_string.strip()
+                item_string = item_string.strip()
 
             if item_string != '':
                 news_dates.append(item_date)
@@ -72,11 +100,12 @@ def downloadNews(company, amount):
                 news_count += 1
 
             current += 1
-            time.sleep(0.01)
+            time.sleep(delay)
 
-        page_number += 1
+        except:
+            time.sleep(delay_except)
 
-    printProgress(amount, amount, True)
+    printProgress(total, total, True)
     print('Done!')
     sys.stdout.flush()
 
