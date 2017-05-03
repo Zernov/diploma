@@ -11,7 +11,17 @@
 \providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em\fi
 \cyrdash\hskip.2em\ignorespaces}
 
-\bibitem{financial_market}
+\bibitem{article:text_mining}
+\selectlanguageifdefined{english}
+\BibEmph{Sumathy~K.~L., Chidambaram~M.} Article: Text Mining: Concepts,
+  Applications, Tools and Issues — An Overview~// \BibEmph{International
+  Journal of Computer Applications}. \BibDash
+\newblock 2013. \BibDash October. \BibDash
+\newblock Vol.~80, no.~4. \BibDash
+\newblock P.~29--32. \BibDash
+\newblock Full text available.
+
+\bibitem{book:financial_market}
 \selectlanguageifdefined{english}
 \BibEmph{V.P.~Romanov}. Information technology modeling of financial markets -
   (Applied Information Technology) / Informatsionnye tekhnologii modelirovaniya

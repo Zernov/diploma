@@ -1,3 +1,3 @@
-# Development of the automatic analysis system of a financial market's news publications
+# Faculty of Mathematics and Mechanics
 ## Computer Science Department
-### Faculty of Mathematics and Mechanics
+### Development of the automatic analysis system of a financial market's news publications
