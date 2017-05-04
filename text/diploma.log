@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  4 MAY 2017 01:15
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  4 MAY 2017 15:31
 entering extended mode
 **./diploma.tex
 (diploma.tex
@@ -967,107 +967,155 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 
  [3
 
-] [4
+] [4] [5
 
-] [5
+] [6
 
 ]
-Overfull \hbox (7.3126pt too wide) in paragraph at lines 89--90
+Overfull \hbox (7.3126pt too wide) in paragraph at lines 84--85
 []\TU/CMUSerif(1)/bx/n/14.4 Организованный рынок \TU/CMUSerif(1)/m/n/14.4 отлич
 ается от \TU/CMUSerif(1)/bx/n/14.4 неорганизованного рын-
  []
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 91.
+(Font)              <5> on input line 86.
 
-Overfull \hbox (3.2814pt too wide) in paragraph at lines 91--92
+Overfull \hbox (3.2814pt too wide) in paragraph at lines 86--87
 \TU/CMUSerif(1)/m/n/14.4 мента торговли используется аукцион. Руководителем же 
 является неко-
  []
 
-[6] [7] [8
+[7] [8] [9
 
 ]
 File: img/text_mining.png Graphic file (type QTm)
- <use  "img/text_mining.png" > [9] [10] [11]
-Overfull \hbox (13.24458pt too wide) in paragraph at lines 185--186
+ <use  "img/text_mining.png" > [10] [11] [12]
+Overfull \hbox (13.24458pt too wide) in paragraph at lines 180--181
 []\TU/CMUSerif(1)/m/n/14.4 В процессе извлечения информации автоматически извле
 кается струк-
  []
 
-[12] [13] [14
+[13] [14]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'CMUTypewriterText(1)' created for font 'CMU Typewriter Text'
+. with options
+. [WordSpace={1,0,0},PunctuationSpace=WordSpace,Mapping=tex-text,Script=Cyrilli
+c].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"CMU Typewriter
+. Text/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'bold' (bx/n) with NFSS spec.: <->"CMU Typewriter
+. Text/B/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'italic' (m/it) with NFSS spec.: <->"CMU Typewriter
+. Text/I/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'bold italic' (bx/it) with NFSS spec.: <->"CMU Typewriter
+. Text/BI/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+.................................................
+ [15
 
-] [15
+] [16] [17
 
-] [16
+] [18
 
 ]
-LaTeX Info: Redefining \ttfamily on input line 221.
- (diploma.bbl [17
+LaTeX Info: Redefining \ttfamily on input line 240.
+ (diploma.bbl [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 1442) in paragraph at lines 16--26
+\TU/CMUSerif(1)/m/n/14.4 Alexander Panchenko et al. []  Springer International 
+Publishing,
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 16--26
+\TU/CMUSerif(1)/m/n/14.4 Science. []  P. 320–332. []  URL: [][]$[][][][] [] [] 
+[] [][] [] [][][] [] [][][] [] [][] [] [][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 []\TU/CMUSerif(1)/m/n/14.4 V.P. Romanov. Information technology modeling of fin
 ancial
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 26--35
+Underfull \hbox (badness 4181) in paragraph at lines 39--48
 \TU/CMUSerif(1)/m/n/14.4 markets - (Applied Information Technology) / Informats
 ionnye
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 \TU/CMUSerif(1)/m/n/14.4 tekhnologii modelirovaniya finansovykh rynkov - (”Prik
 ladnye
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 \TU/CMUSerif(1)/m/n/14.4 informatsionnye tekhnologii”). []  Finansy i statistik
 a, 2010. []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 \TU/CMUSerif(1)/m/n/14.4 ISBN: [][]5279034444[][]. []  URL: [][]$[][][][][] [] 
 [] [] [][][] [] [][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] [] [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][][
 ][][][][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--48
 [][][][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][] [] [][][][] []
  [][][][][][][][] [] [][][][][][] []
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
  (diploma.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 18620 strings out of 427899
- 345601 string characters out of 3153117
- 432520 words of memory out of 3000000
- 22354 multiletter control sequences out of 15000+200000
- 5676 words of font info for 59 fonts, out of 3000000 for 9000
+ 18648 strings out of 427899
+ 346806 string characters out of 3153117
+ 432781 words of memory out of 3000000
+ 22374 multiletter control sequences out of 15000+200000
+ 5740 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,11n,70p,10391b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on diploma.pdf (18 pages).
+Output written on diploma.pdf (20 pages).
