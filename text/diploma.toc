@@ -1,23 +1,28 @@
 \select@language {russian}
-\contentsline {section}{Введение}{4}{section*.2}
-\contentsline {section}{\numberline {1}Финансовый рынок}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Определение}{5}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Структура}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Участники}{7}{subsection.1.3}
-\contentsline {section}{\numberline {2}Интеллектуальный анализ текста}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Процесс интеллектуального анализа текста}{9}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Предварительная обработка текста}{10}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Преобразование текста}{11}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Поиск признаков}{11}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Методы анализа текста}{11}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Интерпретация и оценка}{11}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Области применения интеллектуального анализа текста}{11}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Извлечение информации}{12}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Информационный поиск}{12}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Обработка естественного языка}{12}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Интеллектуальный анализ данных}{13}{subsubsection.2.2.4}
-\contentsline {section}{\numberline {3}Обзор готовых решений}{14}{section.3}
-\contentsline {section}{\numberline {4}Теоретическая информация}{15}{section.4}
-\contentsline {section}{\numberline {5}Практическая часть}{16}{section.5}
-\contentsline {section}{Заключение}{17}{section*.3}
-\contentsline {section}{Список литературы}{18}{section*.4}
+\contentsline {section}{Введение}{5}{section*.2}
+\contentsline {section}{\numberline {1}Финансовый рынок}{6}{section.1}
+\contentsline {subsection}{\numberline {1.1}Определение}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Структура}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Участники}{8}{subsection.1.3}
+\contentsline {section}{\numberline {2}Интеллектуальный анализ текста}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Процесс интеллектуального анализа текста}{10}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Предварительная обработка текста}{11}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Преобразование текста}{12}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Поиск признаков}{12}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Методы анализа текста}{12}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Интерпретация и оценка}{12}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.2}Области применения интеллектуального анализа текста}{12}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Извлечение информации}{13}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Информационный поиск}{13}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Обработка естественного языка}{13}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Интеллектуальный анализ данных}{14}{subsubsection.2.2.4}
+\contentsline {section}{\numberline {3}Обзор существующих инструментов}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Natural Language Toolkit}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}pymorphy2}{15}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Томита-парсер}{16}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Яндекс.Спеллер}{16}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}OntosMiner}{16}{subsection.3.5}
+\contentsline {section}{\numberline {4}Теоретическая информация}{17}{section.4}
+\contentsline {section}{\numberline {5}Практическая часть}{18}{section.5}
+\contentsline {section}{Заключение}{19}{section*.3}
+\contentsline {section}{Список литературы}{20}{section*.4}
