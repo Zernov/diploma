@@ -51,15 +51,15 @@ datet = '26/04/2017'
 #endregion
 
 #region Learning
-num_words = 10000
-dropout_rate = 0.5
+num_words = 3000
+dropout_rate = 0.8
 dimension = 64
 l1_rate = 0.1
 l2_rate = 0.1
 l_rate = 0.01
-batch_size = 2
-epochs = 32
-validation_split = 0.2
+batch_size = 1
+epochs = 128
+validation_split = 0.1
 #endregion
 
 #region News Getter
@@ -137,12 +137,12 @@ model.add(Activation(activation='sigmoid'))
 model.compile(optimizer=Adam(lr=l_rate), loss=binary_crossentropy, metrics=[binary_accuracy])
 
 hist = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
-model.save(path + 'models/{}_model-01.h5'.format(company))
+model.save(path + 'models/{}_model-10.h5'.format(company))
 
-with open(path + 'models/{}_history-01.txt'.format(company), 'w+', encoding='utf8') as temp:
+with open(path + 'models/{}_history-10.txt'.format(company), 'w+', encoding='utf8') as temp:
     temp.write(str(hist.history))
 
 score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
-with open(path + 'models/{}_score-01.txt'.format(company), 'w+', encoding='utf8') as temp:
+with open(path + 'models/{}_score-10.txt'.format(company), 'w+', encoding='utf8') as temp:
     temp.write(str(score))
 #endregion
