@@ -11,7 +11,7 @@
 \providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em\fi
 \cyrdash\hskip.2em\ignorespaces}
 
-\bibitem{pymorphy2}
+\bibitem{tools:pymorphy2}
 \selectlanguageifdefined{english}
 \BibEmph{Korobov~Mikhail}.
   \href{http://dx.doi.org/10.1007/978-3-319-26123-2_31}{Morphological Analyzer
@@ -23,5 +23,27 @@
   Science}. \BibDash
 \newblock P.~320--332. \BibDash
 \newblock URL: \BibUrl{http://dx.doi.org/10.1007/978-3-319-26123-2_31}.
+
+\bibitem{article:text_mining}
+\selectlanguageifdefined{english}
+\BibEmph{Sumathy~K.~L., Chidambaram~M.} Article: Text Mining: Concepts,
+  Applications, Tools and Issues — An Overview~// \BibEmph{International
+  Journal of Computer Applications}. \BibDash
+\newblock 2013. \BibDash October. \BibDash
+\newblock Vol.~80, no.~4. \BibDash
+\newblock P.~29--32. \BibDash
+\newblock Full text available.
+
+\bibitem{book:financial_market}
+\selectlanguageifdefined{english}
+\BibEmph{V.P.~Romanov}. Information technology modeling of financial markets -
+  (Applied Information Technology) / Informatsionnye tekhnologii modelirovaniya
+  finansovykh rynkov - ("Prikladnye informatsionnye tekhnologii"). \BibDash
+\newblock Finansy i statistika, 2010. \BibDash
+\newblock
+  ISBN:~\href{http://isbndb.com/search-all.html?kw=5279034444}{5279034444}.
+  \BibDash
+\newblock URL:
+  \BibUrl{https://www.amazon.com/Information-technology-modeling-financial-markets/dp/5279034444?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=5279034444}.
 
 \end{thebibliography}
