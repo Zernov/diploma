@@ -315,3 +315,5 @@
 %%%
 \usepackage{graphicx}
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}

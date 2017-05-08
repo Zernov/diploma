@@ -1,5 +1,5 @@
 \select@language {russian}
-\contentsline {section}{Введение}{5}{section*.2}
+\contentsline {section}{Введение}{5}{section*.1}
 \contentsline {section}{\numberline {1}Финансовый рынок}{6}{section.1}
 \contentsline {subsection}{\numberline {1.1}Определение}{6}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Структура}{7}{subsection.1.2}
@@ -24,8 +24,8 @@
 \contentsline {subsection}{\numberline {3.5}OntosMiner}{16}{subsection.3.5}
 \contentsline {section}{\numberline {4}Программная часть}{17}{section.4}
 \contentsline {subsection}{\numberline {4.1}Описание}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Используемые инструменты}{17}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Структура программы}{17}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Результаты}{17}{subsection.4.4}
-\contentsline {section}{Заключение}{18}{section*.3}
-\contentsline {section}{Список литературы}{19}{section*.4}
+\contentsline {subsection}{\numberline {4.2}Используемые инструменты}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Структура программы}{18}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Результаты}{19}{subsection.4.4}
+\contentsline {section}{Заключение}{20}{section*.2}
+\contentsline {section}{Список литературы}{21}{section*.3}
