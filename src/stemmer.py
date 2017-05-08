@@ -42,7 +42,7 @@ def stem(news_dates, news, news_count):
         i += 1
         stems.append(' '.join(stem))
 
-    printProgress(news_count, news_count, True)
+    printProgress(stems_count, stems_count, True)
     print('Done!')
     sys.stdout.flush()
 

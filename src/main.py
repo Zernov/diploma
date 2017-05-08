@@ -44,10 +44,10 @@ path = '/home/zernov/Documents/Projects/diploma/src/'
 #endregion
 
 #region Data
-company = 'sberbank'
-amount = 6300
-datef = '01/01/2016'
-datet = '26/04/2017'
+company = 'gazprom'
+amount = 2500
+datef = '01/09/2016'
+datet = '08/05/2017'
 #endregion
 
 #region Learning
@@ -63,27 +63,27 @@ validation_split = 0.1
 #endregion
 
 #region News Getter
-#news_dates, news, news_count = downloadNews(company, amount)
-#writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
+news_dates, news, news_count = downloadNews(company, amount)
+writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
 #news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
 #endregion
 
 #region Stock Getter
-#stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
-#writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
+stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
+writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
 #stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
 #endregion
 
 #region Stemmer
-#stems_dates, stems, stems_count = stem(news_dates, news, news_count)
-#writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
+stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
 #stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
 #endregion
 
 #region Connector
-#connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
-#writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
-connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections/{}.csv'.format(company))
+connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
+writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
+#connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections/{}.csv'.format(company))
 #endregion
 
 #region Work
@@ -127,7 +127,7 @@ get_y = model.predict(testing_X)
 
 print(len(get_y))
 print(get_y)
-'''
+
 model = Sequential()
 model.add(Embedding(input_dim=num_words, output_dim=dimension))
 model.add(LSTM(units=dimension))
@@ -145,4 +145,5 @@ with open(path + 'models/{}_history-10.txt'.format(company), 'w+', encoding='utf
 score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
 with open(path + 'models/{}_score-10.txt'.format(company), 'w+', encoding='utf8') as temp:
     temp.write(str(score))
+'''
 #endregion
