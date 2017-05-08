@@ -24,6 +24,19 @@
 \newblock P.~320--332. \BibDash
 \newblock URL: \BibUrl{http://dx.doi.org/10.1007/978-3-319-26123-2_31}.
 
+\bibitem{tools:nltk}
+\selectlanguageifdefined{english}
+\BibEmph{Loper~Edward, Bird~Steven}.
+  \href{http://dx.doi.org/10.3115/1118108.1118117}{NLTK: The Natural Language
+  Toolkit}~// Proceedings of the ACL-02 Workshop on Effective Tools and
+  Methodologies for Teaching Natural Language Processing and Computational
+  Linguistics - Volume 1. \BibDash
+\newblock ETMTNLP '02. \BibDash
+\newblock Stroudsburg, PA, USA~: Association for Computational Linguistics,
+  2002. \BibDash
+\newblock P.~63--70. \BibDash
+\newblock URL: \BibUrl{http://dx.doi.org/10.3115/1118108.1118117}.
+
 \bibitem{article:text_mining}
 \selectlanguageifdefined{english}
 \BibEmph{Sumathy~K.~L., Chidambaram~M.} Article: Text Mining: Concepts,
