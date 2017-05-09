@@ -57,8 +57,8 @@ dimension = 64
 l1_rate = 0.1
 l2_rate = 0.1
 l_rate = 0.01
-batch_size = 1
-epochs = 2
+batch_size = 2
+epochs = 32
 validation_split = 0.1
 #endregion
 
