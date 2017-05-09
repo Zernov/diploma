@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{\numberline {2.1.3}Поиск признаков}{12}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}Методы анализа текста}{12}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Интерпретация и оценка}{12}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Области применения интеллектуального анализа текста}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Области применения интеллектуального анализа текста}{13}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Извлечение информации}{13}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Информационный поиск}{13}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}Обработка естественного языка}{13}{subsubsection.2.2.3}
@@ -26,6 +26,8 @@
 \contentsline {subsection}{\numberline {4.1}Описание}{17}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Используемые инструменты}{18}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Структура программы}{18}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Результаты}{19}{subsection.4.4}
-\contentsline {section}{Заключение}{20}{section*.2}
-\contentsline {section}{Список литературы}{21}{section*.3}
+\contentsline {subsection}{\numberline {4.4}Работа программы}{20}{subsection.4.4}
+\contentsline {section}{Заключение}{21}{section*.2}
+\contentsline {section}{Список литературы}{22}{section*.3}
+\contentsline {section}{Приложение \numberline {A}Результаты работы}{23}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Код программы}{24}{Приложение.1.B}
