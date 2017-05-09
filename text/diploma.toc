@@ -7,6 +7,9 @@
 \contentsline {section}{\numberline {2}Интеллектуальный анализ текста}{9}{section.2}
 \contentsline {subsection}{\numberline {2.1}Процесс интеллектуального анализа текста}{10}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Предварительная обработка текста}{11}{subsubsection.2.1.1}
+\contentsline {paragraph}{Токенизация}{11}{section*.2}
+\contentsline {paragraph}{Удаление <<стоп-слов>>}{12}{section*.3}
+\contentsline {paragraph}{Происхождения слов}{12}{section*.4}
 \contentsline {subsubsection}{\numberline {2.1.2}Преобразование текста}{12}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}Поиск признаков}{12}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}Методы анализа текста}{12}{subsubsection.2.1.4}
@@ -27,7 +30,16 @@
 \contentsline {subsection}{\numberline {4.2}Используемые инструменты}{18}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Структура программы}{18}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Работа программы}{20}{subsection.4.4}
-\contentsline {section}{Заключение}{21}{section*.2}
-\contentsline {section}{Список литературы}{22}{section*.3}
-\contentsline {section}{Приложение \numberline {A}Результаты работы}{23}{Приложение.1.A}
-\contentsline {section}{Приложение \numberline {B}Код программы}{24}{Приложение.1.B}
+\contentsline {subsubsection}{\numberline {4.4.1}Предварительная обработка}{20}{subsubsection.4.4.1}
+\contentsline {paragraph}{Экспорт новостей}{20}{section*.5}
+\contentsline {paragraph}{Экспорт котировок}{21}{section*.6}
+\contentsline {paragraph}{Преобразование данных}{21}{section*.7}
+\contentsline {subsubsection}{\numberline {4.4.2}Построение модели}{22}{subsubsection.4.4.2}
+\contentsline {section}{Заключение}{23}{section*.8}
+\contentsline {section}{Список литературы}{24}{section*.9}
+\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{25}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{26}{Приложение.1.B}
+\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{27}{Приложение.1.C}
+\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{28}{Приложение.1.D}
+\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{29}{Приложение.1.E}
+\contentsline {section}{Приложение \numberline {F}Результаты работы}{30}{Приложение.1.F}
