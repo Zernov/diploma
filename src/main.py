@@ -52,13 +52,13 @@ datet = '08/05/2017'
 
 #region Learning
 num_words = 3000
-dropout_rate = 0.5
+dropout_rate = 0.75
 dimension = 64
 l1_rate = 0.1
 l2_rate = 0.1
 l_rate = 0.01
 batch_size = 2
-epochs = 32
+epochs = 64
 validation_split = 0.1
 #endregion
 
@@ -86,35 +86,35 @@ validation_split = 0.1
 connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections/{}.csv'.format(company))
 #endregion
 
-def fit(dates, news, stocks, count, name):
+tokenizer = Tokenizer(num_words=num_words)
+tokenizer.fit_on_texts(texts=connections_news)
 
-    tokenizer = Tokenizer(num_words=num_words)
-    tokenizer.fit_on_texts(texts=connections_news)
+total_dates = connections_dates
+total_news = tokenizer.texts_to_sequences(connections_news)
+total_stocks = connections_stocks
+total_count = connections_count
 
-    total_dates = connections_dates
-    total_news = tokenizer.texts_to_sequences(connections_news)
-    total_stocks = connections_stocks
-    total_count = connections_count
+total_news_sequence = sequence.pad_sequences(sequences=total_news)
 
-    total_news_sequence = sequence.pad_sequences(sequences=total_news)
+border = int(connections_count * 0.75)
 
-    border = int(connections_count * 0.75)
+training_dates = total_dates[:border]
+training_news = total_news_sequence[:border]
+training_stocks = total_stocks[:border]
+training_count = border
 
-    training_dates = total_dates[:border]
-    training_news = total_news_sequence[:border]
-    training_stocks = total_stocks[:border]
-    training_count = border
+testing_dates = total_dates[border:]
+testing_news = total_news_sequence[border:]
+testing_stocks = total_stocks[border:]
+testing_count = total_count - border
 
-    testing_dates = total_dates[border:]
-    testing_news = total_news_sequence[border:]
-    testing_stocks = total_stocks[border:]
-    testing_count = total_count - border
+training_X = numpy.array(training_news)
+training_y = numpy.array(training_stocks)
 
-    training_X = numpy.array(training_news)
-    training_y = numpy.array(training_stocks)
+testing_X = numpy.array(testing_news)
+testing_y = numpy.array(testing_stocks)
 
-    testing_X = numpy.array(testing_news)
-    testing_y = numpy.array(testing_stocks)
+def fit(name):
 
     model = Sequential()
     model.add(Embedding(input_dim=num_words, output_dim=dimension))
@@ -142,4 +142,24 @@ def predict(X, name):
 
     return result
 
-fit(connections_dates, connections_news, connections_stocks, connections_count, '11')
+fit('12')
+
+'''
+y = predict(testing_X, '11')
+for item in y:
+    print(0 if item[0] < 0.5 else 1, end = ' ')
+print()
+for item in testing_y:
+    print(item, end = ' ')
+kek = 0
+print()
+for i in range(len(y)):
+    lol = 0 if y[i][0] < 0.5 else 1
+    if (str(lol) == str(testing_y[i])):
+        kek += 1
+        print('+', end = ' ')
+    else:
+        print('-', end = ' ')
+print()
+print(kek / len(y))
+'''
