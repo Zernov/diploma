@@ -35,11 +35,16 @@
 \contentsline {paragraph}{Экспорт котировок}{21}{section*.6}
 \contentsline {paragraph}{Преобразование данных}{21}{section*.7}
 \contentsline {subsubsection}{\numberline {4.4.2}Построение модели}{22}{subsubsection.4.4.2}
-\contentsline {section}{Заключение}{23}{section*.8}
-\contentsline {section}{Список литературы}{24}{section*.9}
-\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{25}{Приложение.1.A}
-\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{26}{Приложение.1.B}
-\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{27}{Приложение.1.C}
-\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{28}{Приложение.1.D}
-\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{29}{Приложение.1.E}
-\contentsline {section}{Приложение \numberline {F}Результаты работы}{30}{Приложение.1.F}
+\contentsline {paragraph}{Embending}{23}{section*.8}
+\contentsline {paragraph}{LSTM}{23}{section*.9}
+\contentsline {paragraph}{Dropout}{23}{section*.10}
+\contentsline {paragraph}{Dense}{23}{section*.11}
+\contentsline {paragraph}{Activation}{23}{section*.12}
+\contentsline {section}{\numberline {5}Результаты}{24}{section.5}
+\contentsline {section}{Заключение}{27}{section*.13}
+\contentsline {section}{Список литературы}{28}{section*.14}
+\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{29}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{30}{Приложение.1.B}
+\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{31}{Приложение.1.C}
+\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{32}{Приложение.1.D}
+\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{33}{Приложение.1.E}
