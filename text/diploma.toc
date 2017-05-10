@@ -54,4 +54,4 @@
 \contentsline {section}{Приложение \numberline {F}Пример текста новости}{34}{Приложение.1.F}
 \contentsline {section}{Приложение \numberline {G}Пример обработанного текста новости}{35}{Приложение.1.G}
 \contentsline {section}{Приложение \numberline {H}Словарь текста новости}{36}{Приложение.1.H}
-\contentsline {section}{Приложение \numberline {I}Новость в виде ветора индексов слов}{37}{Приложение.1.I}
+\contentsline {section}{Приложение \numberline {I}Новость в виде вектора индексов слов}{37}{Приложение.1.I}
