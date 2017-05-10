@@ -17,6 +17,23 @@
 \newblock \url{https://github.com/fchollet/keras}. \BibDash
 \newblock 2015.
 
+\bibitem{tools:dropout}
+\selectlanguageifdefined{english}
+Dropout: a simple way to prevent neural networks from overfitting.~/
+  Nitish~Srivastava, Geoffrey~E~Hinton, Alex~Krizhevsky et~al.~//
+  \BibEmph{Journal of Machine Learning Research}. \BibDash
+\newblock 2014. \BibDash
+\newblock Vol.~15, no.~1. \BibDash
+\newblock P.~1929--1958.
+
+\bibitem{tools:lstm}
+\selectlanguageifdefined{english}
+\BibEmph{Hochreiter~Sepp, Schmidhuber~J{\"u}rgen}. Long short-term memory~//
+  \BibEmph{Neural computation}. \BibDash
+\newblock 1997. \BibDash
+\newblock Vol.~9, no.~8. \BibDash
+\newblock P.~1735--1780.
+
 \bibitem{tools:pymorphy2}
 \selectlanguageifdefined{english}
 \BibEmph{Korobov~Mikhail}.

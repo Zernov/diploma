@@ -2,7 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c511fda-ce82-4fb8-bb0f-f34aaad9390d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_history-11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_history-12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_model-11.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_model-12.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_score-11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/gazprom_score-12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-01.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-02.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-03.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-04.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-05.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-06.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-08.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_history-09.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-01.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-02.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-03.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-04.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-05.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-06.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-07.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-08.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_model-09.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-01.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-02.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-03.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-04.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-05.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-06.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-08.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sberbank_score-09.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.pdf" afterPath="$PROJECT_DIR$/../text/diploma.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.synctex.gz" afterPath="$PROJECT_DIR$/../text/diploma.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.tex" afterPath="$PROJECT_DIR$/../text/diploma.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.aux" afterPath="$PROJECT_DIR$/../text/diploma.aux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.bbl" afterPath="$PROJECT_DIR$/../text/diploma.bbl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.bib" afterPath="$PROJECT_DIR$/../text/diploma.bib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.blg" afterPath="$PROJECT_DIR$/../text/diploma.blg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.log" afterPath="$PROJECT_DIR$/../text/diploma.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.out" afterPath="$PROJECT_DIR$/../text/diploma.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.toc" afterPath="$PROJECT_DIR$/../text/diploma.toc" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,21 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+            <state relative-caret-position="145">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
@@ -116,8 +160,8 @@
         <option value="$PROJECT_DIR$/stocks_getter.py" />
         <option value="$PROJECT_DIR$/connector.py" />
         <option value="$PROJECT_DIR$/stemmer.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/helper.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -340,7 +384,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="708" extended-state="7" />
+    <frame x="0" y="27" width="1366" height="708" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20424597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -564,21 +608,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="145">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helper.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="322">
+          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

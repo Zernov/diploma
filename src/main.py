@@ -52,10 +52,10 @@ datet = '08/05/2017'
 
 #region Learning
 num_words = 3000
-dropout_rate = 0.75
+dropout_rate = 0.5
 dimension = 64
-l1_rate = 0.1
-l2_rate = 0.1
+l1_rate = 0.3
+l2_rate = 0.3
 l_rate = 0.01
 batch_size = 2
 epochs = 64
@@ -142,10 +142,13 @@ def predict(X, name):
 
     return result
 
-fit('12')
+fit('01')
 
 '''
-y = predict(testing_X, '11')
+y = predict(testing_X, '12')
+for item in y:
+    print(item, end = ' ')
+print()
 for item in y:
     print(0 if item[0] < 0.5 else 1, end = ' ')
 print()
