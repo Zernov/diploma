@@ -40,11 +40,11 @@
 \contentsline {paragraph}{Dropout}{23}{section*.10}
 \contentsline {paragraph}{Dense}{23}{section*.11}
 \contentsline {paragraph}{Activation}{23}{section*.12}
-\contentsline {section}{Заключение}{24}{section*.13}
-\contentsline {section}{Список литературы}{25}{section*.14}
-\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{26}{Приложение.1.A}
-\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{27}{Приложение.1.B}
-\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{28}{Приложение.1.C}
-\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{29}{Приложение.1.D}
-\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{30}{Приложение.1.E}
-\contentsline {section}{Приложение \numberline {F}Результаты работы}{31}{Приложение.1.F}
+\contentsline {section}{\numberline {5}Результаты}{24}{section.5}
+\contentsline {section}{Заключение}{27}{section*.13}
+\contentsline {section}{Список литературы}{28}{section*.14}
+\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{29}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{30}{Приложение.1.B}
+\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{31}{Приложение.1.C}
+\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{32}{Приложение.1.D}
+\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{33}{Приложение.1.E}
