@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  10 MAY 2017 22:04
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.2.27)  12 MAY 2017 14:27
 entering extended mode
 **./diploma.tex
 (diploma.tex
@@ -791,10 +791,6 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 . Serif/BI/OT:script=cyrl;language=DFLT;mapping=tex-text;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
-
-
-LaTeX Warning: Label `app:stem' multiply defined.
-
 )
 \openout1 = `diploma.aux'.
 
@@ -1157,32 +1153,36 @@ c].
 ] [16] [17
 
 ] [18]
-Overfull \hbox (1.32297pt too wide) in paragraph at lines 294--295
+Overfull \hbox (1.32297pt too wide) in paragraph at lines 296--297
 []\TU/CMUTypewriterText(1)/m/n/14.4 connector.py \TU/CMUSerif(1)/m/n/14.4 являе
 тся вспомогательным модулем, ответственным
  []
 
 File: img/class.png Graphic file (type QTm)
-<use  "img/class.png" > [19]
-Overfull \hbox (4.07338pt too wide) in paragraph at lines 320--321
+<use  "img/class.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/program.png Graphic file (type QTm)
+<use  "img/program.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20]
+Overfull \hbox (4.07338pt too wide) in paragraph at lines 329--330
 \TU/CMUSerif(1)/m/n/14.4 HTTP-запроса получить информацию по котировкам определ
 енной ком-
  []
 
-[20] [21]
-File: img/layers.png Graphic file (type QTm)
- <use  "img/layers.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[22]
-Overfull \hbox (4.14584pt too wide) in paragraph at lines 355--356
+[21] [22] [23]
+Overfull \hbox (4.14584pt too wide) in paragraph at lines 357--358
  []\TU/CMUSerif(1)/bx/n/14.4 Activation[] \TU/CMUSerif(1)/m/n/14.4 В конце вычи
 сляется активационная сигмоидальная функ-
  []
 
-[23]
-Overfull \hbox (3.0638pt too wide) in paragraph at lines 359--360
+File: img/layers.png Graphic file (type QTm)
+<use  "img/layers.png" > [24]
+Overfull \hbox (3.0638pt too wide) in paragraph at lines 368--369
 []\TU/CMUSerif(1)/m/n/14.4 В качестве примеров были взяты данные компаний «Сбер
 банк» (6300
  []
@@ -1195,17 +1195,17 @@ File: img/lr.png Graphic file (type QTm)
  <use  "img/lr.png" >
 File: img/epoch.png Graphic file (type QTm)
 
-<use  "img/epoch.png" > [24
+<use  "img/epoch.png" > [25
 
 ]
-Overfull \hbox (0.66058pt too wide) in paragraph at lines 405--406
+Overfull \hbox (0.66058pt too wide) in paragraph at lines 412--413
 \TU/CMUSerif(1)/m/n/14.4 ственного новостного сайта предлагается использовать н
 есколько, в свя-
  []
 
-[25] [26]
-LaTeX Info: Redefining \ttfamily on input line 417.
- (diploma.bbl [27
+[26] [27]
+LaTeX Info: Redefining \ttfamily on input line 424.
+ (diploma.bbl [28
 
 ]
 Underfull \hbox (badness 1132) in paragraph at lines 16--19
@@ -1243,28 +1243,24 @@ Underfull \hbox (badness 1248) in paragraph at lines 73--79
 matsionnye
  []
 
-) [28] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+) [29] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [29]
-[30] [31] [32] [33] [34] [35] [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 748.
- [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 748.
+) [30]
+[31] [32] [33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 625.
+ [34]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 625.
  (diploma.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 748.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 748.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 625.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 625.
  ) 
 Here is how much of TeX's memory you used:
  20547 strings out of 427899
- 373694 string characters out of 3153117
- 508279 words of memory out of 3000000
- 24242 multiletter control sequences out of 15000+200000
+ 373707 string characters out of 3153117
+ 508116 words of memory out of 3000000
+ 24241 multiletter control sequences out of 15000+200000
  5772 words of font info for 71 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,11n,74p,10391b,1244s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on diploma.pdf (37 pages).
+Output written on diploma.pdf (34 pages).

@@ -26,32 +26,29 @@
 \contentsline {subsection}{\numberline {3.4}Яндекс.Спеллер}{16}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}OntosMiner}{16}{subsection.3.5}
 \contentsline {section}{\numberline {4}Программная часть}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Описание}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Используемые инструменты}{18}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Структура программы}{18}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Работа программы}{20}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Предварительная обработка}{20}{subsubsection.4.4.1}
+\contentsline {subsection}{\numberline {4.1}Постановка задачи}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Описание}{17}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Используемые инструменты}{18}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Структура программы}{19}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Работа программы}{19}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Предварительная обработка}{20}{subsubsection.4.5.1}
 \contentsline {paragraph}{Экспорт новостей}{20}{section*.5}
 \contentsline {paragraph}{Экспорт котировок}{21}{section*.6}
-\contentsline {paragraph}{Преобразование данных}{21}{section*.7}
-\contentsline {subsubsection}{\numberline {4.4.2}Построение модели}{22}{subsubsection.4.4.2}
+\contentsline {paragraph}{Преобразование данных}{22}{section*.7}
+\contentsline {subsubsection}{\numberline {4.5.2}Построение модели}{23}{subsubsection.4.5.2}
 \contentsline {paragraph}{Embending}{23}{section*.8}
 \contentsline {paragraph}{LSTM}{23}{section*.9}
 \contentsline {paragraph}{Dropout}{23}{section*.10}
-\contentsline {paragraph}{Dense}{23}{section*.11}
-\contentsline {paragraph}{Activation}{23}{section*.12}
-\contentsline {section}{\numberline {5}Результаты}{24}{section.5}
-\contentsline {paragraph}{Отсутствие привязки новостей к определенным компаниям}{25}{section*.13}
+\contentsline {paragraph}{Dense}{24}{section*.11}
+\contentsline {paragraph}{Activation}{24}{section*.12}
+\contentsline {section}{\numberline {5}Результаты}{25}{section.5}
+\contentsline {paragraph}{Отсутствие привязки новостей к определенным компаниям}{26}{section*.13}
 \contentsline {paragraph}{Увеличение количества источников}{26}{section*.14}
-\contentsline {paragraph}{Загрузка более старых новостей}{26}{section*.15}
-\contentsline {section}{Заключение}{27}{section*.16}
-\contentsline {section}{Список литературы}{28}{section*.17}
-\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{29}{Приложение.1.A}
-\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{30}{Приложение.1.B}
-\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{31}{Приложение.1.C}
-\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{32}{Приложение.1.D}
-\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{33}{Приложение.1.E}
-\contentsline {section}{Приложение \numberline {F}Пример текста новости}{34}{Приложение.1.F}
-\contentsline {section}{Приложение \numberline {G}Пример обработанного текста новости}{35}{Приложение.1.G}
-\contentsline {section}{Приложение \numberline {H}Словарь текста новости}{36}{Приложение.1.H}
-\contentsline {section}{Приложение \numberline {I}Новость в виде вектора индексов слов}{37}{Приложение.1.I}
+\contentsline {paragraph}{Загрузка более старых новостей}{27}{section*.15}
+\contentsline {section}{Заключение}{28}{section*.16}
+\contentsline {section}{Список литературы}{29}{section*.17}
+\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{30}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{31}{Приложение.1.B}
+\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{32}{Приложение.1.C}
+\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{33}{Приложение.1.D}
+\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{34}{Приложение.1.E}
