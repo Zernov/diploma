@@ -22,21 +22,18 @@
 \BOOKMARK [2][-]{subsection.3.4}{Яндекс.Спеллер}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.5}{OntosMiner}{section.3}% 23
 \BOOKMARK [1][-]{section.4}{Программная часть}{}% 24
-\BOOKMARK [2][-]{subsection.4.1}{Описание}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.2}{Используемые инструменты}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.3}{Структура программы}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.4}{Работа программы}{section.4}% 28
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Предварительная обработка}{subsection.4.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Построение модели}{subsection.4.4}% 30
-\BOOKMARK [1][-]{section.5}{Результаты}{}% 31
-\BOOKMARK [1][-]{section*.16}{Заключение}{}% 32
-\BOOKMARK [1][-]{section*.17}{Список литературы}{}% 33
-\BOOKMARK [1][-]{Приложение.1.A}{Приложение Исходный код метода downloadNews}{}% 34
-\BOOKMARK [1][-]{Приложение.1.B}{Приложение Исходный код метода downloadStocks}{}% 35
-\BOOKMARK [1][-]{Приложение.1.C}{Приложение Исходный код метода stem}{}% 36
-\BOOKMARK [1][-]{Приложение.1.D}{Приложение Исходный код метода connect}{}% 37
-\BOOKMARK [1][-]{Приложение.1.E}{Приложение Исходный код метода fit}{}% 38
-\BOOKMARK [1][-]{Приложение.1.F}{Приложение Пример текста новости}{}% 39
-\BOOKMARK [1][-]{Приложение.1.G}{Приложение Пример обработанного текста новости}{}% 40
-\BOOKMARK [1][-]{Приложение.1.H}{Приложение Словарь текста новости}{}% 41
-\BOOKMARK [1][-]{Приложение.1.I}{Приложение Новость в виде ветора индексов слов}{}% 42
+\BOOKMARK [2][-]{subsection.4.1}{Постановка задачи}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.2}{Описание}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Используемые инструменты}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.4}{Структура программы}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.5}{Работа программы}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Предварительная обработка}{subsection.4.5}% 30
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Построение модели}{subsection.4.5}% 31
+\BOOKMARK [1][-]{section.5}{Результаты}{}% 32
+\BOOKMARK [1][-]{section*.16}{Заключение}{}% 33
+\BOOKMARK [1][-]{section*.17}{Список литературы}{}% 34
+\BOOKMARK [1][-]{Приложение.1.A}{Приложение Исходный код метода downloadNews}{}% 35
+\BOOKMARK [1][-]{Приложение.1.B}{Приложение Исходный код метода downloadStocks}{}% 36
+\BOOKMARK [1][-]{Приложение.1.C}{Приложение Исходный код метода stem}{}% 37
+\BOOKMARK [1][-]{Приложение.1.D}{Приложение Исходный код метода connect}{}% 38
+\BOOKMARK [1][-]{Приложение.1.E}{Приложение Исходный код метода fit}{}% 39
