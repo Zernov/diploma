@@ -108,6 +108,9 @@ testing_news = total_news_sequence[border:]
 testing_stocks = total_stocks[border:]
 testing_count = total_count - border
 
+total_X = numpy.array(total_news_sequence)
+total_y = numpy.array(total_stocks)
+
 training_X = numpy.array(training_news)
 training_y = numpy.array(training_stocks)
 
@@ -141,26 +144,7 @@ def predict(X, name):
     result = model.predict(X)
 
     return result
-'''
-fit('01')
-'''
-y = predict(training_X, '01')
-for item in y:
-    print(item, end = ' ')
-print()
-for item in y:
-    print(0 if item[0] < 0.5 else 1, end = ' ')
-print()
-for item in training_y:
-    print(item, end = ' ')
-kek = 0
-print()
-for i in range(len(y)):
-    lol = 0 if y[i][0] < 0.5 else 1
-    if (str(lol) == str(training_y[i])):
-        kek += 1
-        print('+', end = ' ')
-    else:
-        print('-', end = ' ')
-print()
-print(kek / len(y))
+
+
+#fit('01')
+#y = predict(total_X, '01')

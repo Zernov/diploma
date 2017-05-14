@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c511fda-ce82-4fb8-bb0f-f34aaad9390d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.pdf" afterPath="$PROJECT_DIR$/../text/diploma.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.synctex.gz" afterPath="$PROJECT_DIR$/../text/diploma.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.tex" afterPath="$PROJECT_DIR$/../text/diploma.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connections/gazprom.csv" afterPath="$PROJECT_DIR$/connections/gazprom.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connections/sberbank.csv" afterPath="$PROJECT_DIR$/connections/sberbank.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/gazprom_history-01.txt" afterPath="$PROJECT_DIR$/models/gazprom_history-01.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/gazprom_model-01.h5" afterPath="$PROJECT_DIR$/models/gazprom_model-01.h5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/gazprom_score-01.txt" afterPath="$PROJECT_DIR$/models/gazprom_score-01.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/gazprom.csv" afterPath="$PROJECT_DIR$/news/gazprom.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/sberbank.csv" afterPath="$PROJECT_DIR$/news/sberbank.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news_getter.py" afterPath="$PROJECT_DIR$/news_getter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stems/gazprom.csv" afterPath="$PROJECT_DIR$/stems/gazprom.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stems/sberbank.csv" afterPath="$PROJECT_DIR$/stems/sberbank.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stocks/gazprom.csv" afterPath="$PROJECT_DIR$/stocks/gazprom.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stocks/sberbank.csv" afterPath="$PROJECT_DIR$/stocks/sberbank.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stocks_getter.py" afterPath="$PROJECT_DIR$/stocks_getter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.aux" afterPath="$PROJECT_DIR$/../text/diploma.aux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.log" afterPath="$PROJECT_DIR$/../text/diploma.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.out" afterPath="$PROJECT_DIR$/../text/diploma.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.toc" afterPath="$PROJECT_DIR$/../text/diploma.toc" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,21 +77,11 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
+            <state relative-caret-position="442">
+              <caret line="149" column="1" lean-forward="false" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sberbank.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52830">
-              <caret line="3522" column="96" lean-forward="false" selection-start-line="3522" selection-start-column="96" selection-end-line="3522" selection-end-column="96" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -252,6 +234,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,14 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52830">
-          <caret line="3522" column="96" lean-forward="false" selection-start-line="3522" selection-start-column="96" selection-end-line="3522" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news_getter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
@@ -569,10 +544,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="1" column="508" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="508" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
+        <state relative-caret-position="442">
+          <caret line="149" column="1" lean-forward="false" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
           </folding>
