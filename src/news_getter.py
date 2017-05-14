@@ -22,6 +22,8 @@ def getTrs(company, amount):
         company = '1'
     elif company == 'gazprom':
         company = '3'
+    elif company == 'dm':
+        company = '48'
 
     amount = int(amount)
     page_count = amount // 50
@@ -86,7 +88,9 @@ def downloadNews(company, amount):
 
             item_url = domain + td[1].find('a').get('href')
             item_page = urlopen(item_url)
-            item_data = BeautifulSoup(item_page, 'html.parser').find('div', { 'class' : 'm-content' }).findAll('p')
+            item_bs = BeautifulSoup(item_page, 'html.parser')
+            item_single = item_bs.find('div', { 'class' : 'mfd-related-companies' }).findAll('a')
+            item_data = item_bs.find('div', { 'class' : 'm-content' }).findAll('p')
             item_string = ''
 
             for j in range(1, len(item_data) - 2):
@@ -94,7 +98,7 @@ def downloadNews(company, amount):
 
                 item_string = item_string.strip()
 
-            if item_string != '':
+            if item_string != '' and len(item_single) == 1:
                 news_dates.append(item_date)
                 news.append(item_string)
                 news_count += 1

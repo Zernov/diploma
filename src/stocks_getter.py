@@ -15,6 +15,9 @@ def downloadStock(company, date_from, date_to):
     elif company == 'gazprom':
         code = 'GAZP'
         em = '16842'
+    elif company == 'dm':
+        code = 'DSKY'
+        em = '473181'
 
     dfs = date_from.split('/')
     df = dfs[0].lstrip('0')
