@@ -25,11 +25,9 @@
       <file leaf-file-name="stemmer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stemmer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,6 +47,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gazprom.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stems/gazprom.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sberbank.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="10" column="951" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sberbank.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stems/sberbank.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="1" column="6300" lean-forward="true" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
               <folding />
             </state>
           </provider>
@@ -77,11 +105,21 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="149" column="1" lean-forward="false" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+            <state relative-caret-position="397">
+              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gazprom.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/gazprom.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="7" column="168" lean-forward="true" selection-start-line="7" selection-start-column="168" selection-end-line="7" selection-end-column="168" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,6 +137,9 @@
     <findStrings>
       <find>конк</find>
       <find>торг</find>
+      <find>доход</find>
+      <find>доходн инве</find>
+      <find>доходн инвестиц</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,10 +159,10 @@
         <option value="$PROJECT_DIR$/url_getter.py" />
         <option value="$PROJECT_DIR$/connections/sberbank.csv" />
         <option value="$PROJECT_DIR$/connector.py" />
-        <option value="$PROJECT_DIR$/stemmer.py" />
         <option value="$PROJECT_DIR$/helper.py" />
         <option value="$PROJECT_DIR$/stocks_getter.py" />
         <option value="$PROJECT_DIR$/news_getter.py" />
+        <option value="$PROJECT_DIR$/stemmer.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -150,6 +191,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,7 +276,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,7 +401,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="708" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20424597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,7 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stems/gazprom.csv" />
     <entry file="file://$PROJECT_DIR$/url_getter.py" />
     <entry file="file://$PROJECT_DIR$/models/sberbank_model-01.h5" />
     <entry file="file://$PROJECT_DIR$/models/sberbank_score-05.txt" />
@@ -459,13 +498,6 @@
     <entry file="file://$PROJECT_DIR$/models/sberbank_score-03.txt" />
     <entry file="file://$PROJECT_DIR$/models/sberbank_score-02.txt" />
     <entry file="file://$PROJECT_DIR$/models/sberbank_score-01.txt" />
-    <entry file="file://$PROJECT_DIR$/stems/sberbank.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="0" column="5083" lean-forward="false" selection-start-line="0" selection-start-column="5083" selection-end-line="0" selection-end-column="5083" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stocks/sberbank.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1781">
@@ -511,20 +543,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/gazprom.csv">
+    <entry file="file://$PROJECT_DIR$/news_getter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="183" column="10" lean-forward="true" selection-start-line="183" selection-start-column="10" selection-end-line="183" selection-end-column="10" />
+        <state relative-caret-position="1245">
+          <caret line="91" column="56" lean-forward="false" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stemmer.py">
+    <entry file="file://$PROJECT_DIR$/news/gazprom.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="7" column="168" lean-forward="true" selection-start-line="7" selection-start-column="168" selection-end-line="7" selection-end-column="168" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -536,25 +567,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news_getter.py">
+    <entry file="file://$PROJECT_DIR$/stems/gazprom.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="91" column="56" lean-forward="false" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="1" column="508" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="508" />
+        <state relative-caret-position="389">
+          <caret line="10" column="951" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stems/sberbank.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1" column="6300" lean-forward="true" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stemmer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="149" column="1" lean-forward="false" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+        <state relative-caret-position="397">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
           </folding>
