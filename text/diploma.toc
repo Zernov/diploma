@@ -41,21 +41,25 @@
 \contentsline {paragraph}{Dropout}{23}{section*.10}
 \contentsline {paragraph}{Dense}{24}{section*.11}
 \contentsline {paragraph}{Activation}{24}{section*.12}
-\contentsline {section}{\numberline {5}Результаты}{25}{section.5}
-\contentsline {paragraph}{Отсутствие привязки новостей к определенным компаниям}{27}{section*.13}
-\contentsline {paragraph}{Увеличение количества источников}{28}{section*.14}
-\contentsline {paragraph}{Загрузка более старых новостей}{28}{section*.15}
-\contentsline {section}{Заключение}{29}{section*.16}
-\contentsline {section}{Список литературы}{30}{section*.17}
-\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{31}{Приложение.1.A}
-\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{32}{Приложение.1.B}
-\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{33}{Приложение.1.C}
-\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{34}{Приложение.1.D}
-\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{35}{Приложение.1.E}
-\contentsline {section}{Приложение \numberline {F}Словарь <<стоп-слов>>}{36}{Приложение.1.F}
-\contentsline {section}{Приложение \numberline {G}Пример обработки новости}{37}{Приложение.1.G}
-\contentsline {paragraph}{Исходная новость}{37}{section*.18}
-\contentsline {paragraph}{Новость после стемминга}{37}{section*.19}
-\contentsline {paragraph}{Новость в виде вектора индексов слов}{37}{section*.20}
-\contentsline {section}{Приложение \numberline {H}Пример легких для определения новостей}{38}{Приложение.1.H}
-\contentsline {section}{Приложение \numberline {I}Пример трудных для определения новостей}{39}{Приложение.1.I}
+\contentsline {subsubsection}{\numberline {4.5.3}Обучение, тестирование, предсказание}{24}{subsubsection.4.5.3}
+\contentsline {section}{\numberline {5}Результаты}{26}{section.5}
+\contentsline {subsection}{\numberline {5.1}Подбор параметров}{26}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Примеры оцененных новостей}{27}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Рекомендации по увеличению эффективности}{28}{subsection.5.3}
+\contentsline {paragraph}{Отсутствие привязки новостей к определенным компаниям}{28}{section*.13}
+\contentsline {paragraph}{Увеличение количества источников}{29}{section*.14}
+\contentsline {paragraph}{Загрузка более старых новостей}{29}{section*.15}
+\contentsline {section}{Заключение}{30}{section*.16}
+\contentsline {section}{Список литературы}{31}{section*.17}
+\contentsline {section}{Приложение \numberline {A}Исходный код метода downloadNews}{32}{Приложение.1.A}
+\contentsline {section}{Приложение \numberline {B}Исходный код метода downloadStocks}{33}{Приложение.1.B}
+\contentsline {section}{Приложение \numberline {C}Исходный код метода stem}{34}{Приложение.1.C}
+\contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{35}{Приложение.1.D}
+\contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{36}{Приложение.1.E}
+\contentsline {section}{Приложение \numberline {F}Словарь <<стоп-слов>>}{37}{Приложение.1.F}
+\contentsline {section}{Приложение \numberline {G}Пример обработки новости}{38}{Приложение.1.G}
+\contentsline {paragraph}{Исходная новость}{38}{section*.18}
+\contentsline {paragraph}{Новость после стемминга}{38}{section*.19}
+\contentsline {paragraph}{Новость в виде вектора индексов слов}{38}{section*.20}
+\contentsline {section}{Приложение \numberline {H}Пример легких для определения новостей}{39}{Приложение.1.H}
+\contentsline {section}{Приложение \numberline {I}Пример трудных для определения новостей}{40}{Приложение.1.I}
