@@ -62,29 +62,53 @@ epochs = 32
 validation_split = 0.25
 #endregion
 
-#region News Getter
-#news_dates, news, news_count = downloadNews(company, amount)
-#writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
-#news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
-#endregion
+def getData(company, amount, datef, datet):
 
-#region Stock Getter
-#stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
-#writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
-#stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
-#endregion
+    news_dates, news, news_count = downloadNews(company, amount)
+    writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
 
-#region Stemmer
-#stems_dates, stems, stems_count = stem(news_dates, news, news_count)
-#writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
-#stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
-#endregion
+    stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
+    writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
 
-#region Connector
-#connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
-#writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
-connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections/{}.csv'.format(company))
-#endregion
+    stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+    writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
+
+    connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
+    writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
+
+def readData(company):
+
+    return readConnections(path + 'connections/{}.csv'.format(company))
+
+def fit(company, name, training_X, training_y, testing_X, testing_y):
+
+    model = Sequential()
+    model.add(Embedding(input_dim=num_words, output_dim=dimension))
+    model.add(LSTM(units=dimension))
+    model.add(Dropout(rate=dropout_rate))
+    model.add(Dense(units=1, kernel_regularizer=l1_l2(l1=l1_rate, l2=l2_rate)))
+    model.add(Activation(activation='sigmoid'))
+    model.compile(optimizer=Adam(lr=l_rate), loss=binary_crossentropy, metrics=[binary_accuracy])
+
+    hist = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
+    model.save(path + 'models/{}_model-{}.h5'.format(company, name))
+
+    with open(path + 'models/{}_history-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
+        temp.write(str(hist.history))
+
+    score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
+    with open(path + 'models/{}_score-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
+        temp.write(str(score))
+
+def predict(X, company, name):
+
+    model = load_model(path + 'models/{}_model-{}.h5'.format(company, name))
+
+    result = model.predict(X)
+
+    return result
+'''
+connections_dates, connections_news, connections_stocks, connections_count = readData(company)
 
 tokenizer = Tokenizer(num_words=num_words)
 tokenizer.fit_on_texts(texts=connections_news)
@@ -116,36 +140,6 @@ training_y = numpy.array(training_stocks)
 
 testing_X = numpy.array(testing_news)
 testing_y = numpy.array(testing_stocks)
-
-def fit(name):
-
-    model = Sequential()
-    model.add(Embedding(input_dim=num_words, output_dim=dimension))
-    model.add(LSTM(units=dimension))
-    model.add(Dropout(rate=dropout_rate))
-    model.add(Dense(units=1, kernel_regularizer=l1_l2(l1=l1_rate, l2=l2_rate)))
-    model.add(Activation(activation='sigmoid'))
-    model.compile(optimizer=Adam(lr=l_rate), loss=binary_crossentropy, metrics=[binary_accuracy])
-
-    hist = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
-    model.save(path + 'models/{}_model-{}.h5'.format(company, name))
-
-    with open(path + 'models/{}_history-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
-        temp.write(str(hist.history))
-
-    score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
-    with open(path + 'models/{}_score-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
-        temp.write(str(score))
-
-def predict(X, name):
-
-    model = load_model(path + 'models/{}_model-{}.h5'.format(company, name))
-
-    result = model.predict(X)
-
-    return result
-
-print(tokenizer.texts_to_sequences(['доходн инвестиц пенсион накоплен год положительн порядк распределя доходн положительн несмотр обва офз рынк облигац т д сказа структур портфел пенсион накоплен фонд дан момент распредел след образ банковск депозит корпоративн облигац окол акц окол накоплен инвестирова краткосрочн финансов инструмент остальн долгосрочн']))
-
+'''
 #fit('01')
 #y = predict(total_X, '01')

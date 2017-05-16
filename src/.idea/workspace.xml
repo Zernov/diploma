@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c511fda-ce82-4fb8-bb0f-f34aaad9390d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.pdf" afterPath="$PROJECT_DIR$/../text/diploma.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.synctex.gz" afterPath="$PROJECT_DIR$/../text/diploma.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.tex" afterPath="$PROJECT_DIR$/../text/diploma.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.aux" afterPath="$PROJECT_DIR$/../text/diploma.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.log" afterPath="$PROJECT_DIR$/../text/diploma.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.out" afterPath="$PROJECT_DIR$/../text/diploma.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../text/diploma.toc" afterPath="$PROJECT_DIR$/../text/diploma.toc" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/stemmer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
+              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -65,8 +59,8 @@
       <file leaf-file-name="sberbank.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="10" column="951" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
+            <state relative-caret-position="150">
+              <caret line="10" column="951" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
               <folding />
             </state>
           </provider>
@@ -75,8 +69,8 @@
       <file leaf-file-name="sberbank.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stems/sberbank.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="1" column="6300" lean-forward="true" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
+            <state relative-caret-position="15">
+              <caret line="1" column="6300" lean-forward="false" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
               <folding />
             </state>
           </provider>
@@ -105,8 +99,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
@@ -117,7 +111,7 @@
       <file leaf-file-name="gazprom.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/gazprom.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="105">
               <caret line="7" column="168" lean-forward="true" selection-start-line="7" selection-start-column="168" selection-end-line="7" selection-end-column="168" />
               <folding />
             </state>
@@ -130,6 +124,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -191,7 +186,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,6 +270,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,6 +396,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="708" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20424597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -553,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/gazprom.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="105">
           <caret line="7" column="168" lean-forward="true" selection-start-line="7" selection-start-column="168" selection-end-line="7" selection-end-column="168" />
           <folding />
         </state>
@@ -577,16 +573,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/sberbank.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="10" column="951" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
+        <state relative-caret-position="150">
+          <caret line="10" column="951" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="951" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stems/sberbank.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="1" column="6300" lean-forward="true" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
+        <state relative-caret-position="15">
+          <caret line="1" column="6300" lean-forward="false" selection-start-line="1" selection-start-column="6300" selection-end-line="1" selection-end-column="6300" />
           <folding />
         </state>
       </provider>
@@ -594,15 +590,15 @@
     <entry file="file://$PROJECT_DIR$/stemmer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="15" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
           </folding>
