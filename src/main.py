@@ -35,6 +35,7 @@ from keras.metrics import binary_accuracy
 import numpy
 import os
 import csv
+import sys
 #endregion
 
 #region System
@@ -43,12 +44,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 path = '/home/zernov/Documents/Projects/diploma/src/'
 #endregion
 
-#region Data
-company = 'sberbank'
-amount = 10000
-datef = '01/09/2001'
-datet = '12/05/2017'
-#endregion
+predict_path = ''
 
 #region Learning
 num_words = 1000
@@ -80,7 +76,7 @@ def readData(company):
 
     return readConnections(path + 'connections/{}.csv'.format(company))
 
-def fit(company, name, training_X, training_y, testing_X, testing_y):
+def fit(company, training_X, training_y, testing_X, testing_y):
 
     model = Sequential()
     model.add(Embedding(input_dim=num_words, output_dim=dimension))
@@ -91,24 +87,39 @@ def fit(company, name, training_X, training_y, testing_X, testing_y):
     model.compile(optimizer=Adam(lr=l_rate), loss=binary_crossentropy, metrics=[binary_accuracy])
 
     hist = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
-    model.save(path + 'models/{}_model-{}.h5'.format(company, name))
+    model.save(path + 'models/{}_model.h5'.format(company))
 
-    with open(path + 'models/{}_history-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
+    with open(path + 'models/{}_history.txt'.format(company), 'w+', encoding='utf8') as temp:
         temp.write(str(hist.history))
 
     score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
-    with open(path + 'models/{}_score-{}.txt'.format(company, name), 'w+', encoding='utf8') as temp:
+    with open(path + 'models/{}_score.txt'.format(company), 'w+', encoding='utf8') as temp:
         temp.write(str(score))
 
-def predict(X, company, name):
+def predict(X, company):
 
-    model = load_model(path + 'models/{}_model-{}.h5'.format(company, name))
+    model = load_model(path + 'models/{}_model.h5'.format(company))
 
     result = model.predict(X)
 
     return result
-'''
-connections_dates, connections_news, connections_stocks, connections_count = readData(company)
+
+
+if sys.argv[1] == '-f':
+    #company = 'sberbank'
+    company = sys.argv[2]
+    #amount = 10000
+    amount = sys.argv[3]
+    #datef = '01/09/2001'
+    datef = sys.argv[4]
+    #datet = '12/05/2017'
+    datet = sys.argv[5]
+    getData(company, amount, datef, datet)
+    connections_dates, connections_news, connections_stocks, connections_count = readData(company)
+else:
+    company = sys.argv[2]
+    predict_path = sys.argv[3]
+    connections_dates, connections_news, connections_stocks, connections_count = readData(company)
 
 tokenizer = Tokenizer(num_words=num_words)
 tokenizer.fit_on_texts(texts=connections_news)
@@ -140,6 +151,9 @@ training_y = numpy.array(training_stocks)
 
 testing_X = numpy.array(testing_news)
 testing_y = numpy.array(testing_stocks)
-'''
-#fit('01')
-#y = predict(total_X, '01')
+
+if sys.argv[1] == '-f':
+    fit(company, training_X, training_y, testing_X, testing_y)
+else:
+    news_dates, news, news_count = readNews(predict_path)
+    predict(tokenizer.texts_to_sequences(news), company)
