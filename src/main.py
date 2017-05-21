@@ -47,14 +47,14 @@ path = '/home/zernov/Documents/Projects/diploma/src/'
 predict_path = ''
 
 #region Learning
-num_words = 1000
+num_words = 3000
 dropout_rate = 0.5
-dimension = 16
+dimension = 64
 l1_rate = 0.1
 l2_rate = 0.1
-l_rate = 0.01
-batch_size = 1
-epochs = 32
+l_rate = 0.05
+batch_size = 2
+epochs = 16
 validation_split = 0.25
 #endregion
 
@@ -109,12 +109,12 @@ if sys.argv[1] == '-f':
     #company = 'sberbank'
     company = sys.argv[2]
     #amount = 10000
-    amount = sys.argv[3]
+    #amount = sys.argv[3]
     #datef = '01/09/2001'
-    datef = sys.argv[4]
+    #datef = sys.argv[4]
     #datet = '12/05/2017'
-    datet = sys.argv[5]
-    getData(company, amount, datef, datet)
+    #datet = sys.argv[5]
+    #getData(company, amount, datef, datet)
     connections_dates, connections_news, connections_stocks, connections_count = readData(company)
 else:
     company = sys.argv[2]
