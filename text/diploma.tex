@@ -3,7 +3,8 @@
 \begin{document}
 
 \filltitle{ru}{
-    chair              = {Кафедра информатики},
+%   chair              = {Кафедра информатики},
+	chair              = {Фундаментальная информатика и информационные технологии\\Информационные технологии},
     title              = {Разработка системы автоматического анализа новостных публикаций на финансовом рынке},
     %   coursework - Курсовая работа
     %   diploma - Диплом специалиста
@@ -20,12 +21,13 @@
 %   chairHeadPosition  = {д.\,ф.-м.\,н., профессор},
 %   chairHead          = {Новиков Б.\,А.},
     university         = {Санкт-Петербургский Государственный Университет},
-    faculty            = {Математико-механический факультет},
+%   faculty            = {Математико-механический факультет},
     city               = {Санкт-Петербург},
     year               = {2017}	
 }
 \filltitle{en}{
-    chair              = {Computer Science Department},
+%   chair              = {Computer Science Department},
+    chair              = {Fundamental Informatics and Information Technology\\Information Technology},
     title              = {Development of automatic analysis system of financial market news publications},
     type               = {bachelor},
     position           = {student},
@@ -37,7 +39,7 @@
     reviewer           = {Alexander Musaev},
 %   chairHeadPosition  = {professor},
 %   chairHead          = {Boris Novikov},
-    faculty            = {Faculty of Mathematics and Mechanics},
+%   faculty            = {Faculty of Mathematics and Mechanics},
     city               = {Saint-Petersburg},
     year               = {2017}
 }
@@ -392,9 +394,11 @@ OntosMiner\footnote{\url{http://my-eventos.com/solution/ontosminer/}} являе
 
 В первом случае происходит загрузка новостей заданной компании \texttt{company} в количестве, равном числу \texttt{amount}, загрузка котировок за период от \texttt{datef} до \texttt{datet}, построение и обучение модели. При запуске программы по второму шаблону происходит загрузка построенной модели для \texttt{company} с последующим предсказанием новостей, расположенных в файле по адресу \texttt{predict\_path}.
 
+Одним из недостатков данной программы является отсутствие возможности <<дообучения>> системы при подаче дополнительных данных к уже обученной модели. Необходимо по-новой ее заполнять с уже расширенным данным.
+
 \clearpage\section{Результаты}
 
-В качестве примера были взяты данные компании <<Сбербанк>> (10000 новостей). Построенная модель имела предсказывающую точность около 80-85\%.
+В качестве примера были взяты данные компании <<Сбербанк>> (10000 новостей). Построенная модель имела предсказывающую точность около 65\%.
 
 \subsection{Подбор параметров}
 
