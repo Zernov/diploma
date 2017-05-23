@@ -62,15 +62,19 @@ def getData(company, amount, datef, datet):
 
     news_dates, news, news_count = downloadNews(company, amount)
     writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
+    #news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
 
     stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
     writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
+    #stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
 
     stems_dates, stems, stems_count = stem(news_dates, news, news_count)
     writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
+    #stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
 
     connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
     writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
+    #connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'news/{}.csv'.format(company))
 
 def readData(company):
 
@@ -106,15 +110,15 @@ def predict(X, company):
 
 
 if sys.argv[1] == '-f':
-    #company = 'sberbank'
-    company = sys.argv[2]
-    #amount = 10000
+    company = 'gazprom'
+    #company = sys.argv[2]
+    amount = 100
     #amount = sys.argv[3]
-    #datef = '01/09/2001'
+    datef = '01/09/2001'
     #datef = sys.argv[4]
-    #datet = '12/05/2017'
+    datet = '23/05/2017'
     #datet = sys.argv[5]
-    #getData(company, amount, datef, datet)
+    getData(company, amount, datef, datet)
     connections_dates, connections_news, connections_stocks, connections_count = readData(company)
 else:
     company = sys.argv[2]
@@ -152,8 +156,8 @@ training_y = numpy.array(training_stocks)
 testing_X = numpy.array(testing_news)
 testing_y = numpy.array(testing_stocks)
 
-if sys.argv[1] == '-f':
-    fit(company, training_X, training_y, testing_X, testing_y)
-else:
-    news_dates, news, news_count = readNews(predict_path)
-    predict(tokenizer.texts_to_sequences(news), company)
+#if sys.argv[1] == '-f':
+#    fit(company, training_X, training_y, testing_X, testing_y)
+#else:
+#    news_dates, news, news_count = readNews(predict_path)
+#    predict(tokenizer.texts_to_sequences(news), company)
