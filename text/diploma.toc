@@ -58,9 +58,9 @@
 \contentsline {section}{Приложение \numberline {D}Исходный код метода connect}{35}{Приложение.1.D}
 \contentsline {section}{Приложение \numberline {E}Исходный код метода fit}{36}{Приложение.1.E}
 \contentsline {section}{Приложение \numberline {F}Словарь <<стоп-слов>>}{37}{Приложение.1.F}
-\contentsline {section}{Приложение \numberline {G}Пример обработки новости}{38}{Приложение.1.G}
+\contentsline {section}{Приложение \numberline {G}Пример обработки текста новости}{38}{Приложение.1.G}
 \contentsline {paragraph}{Исходная новость}{38}{section*.18}
 \contentsline {paragraph}{Новость после стемминга}{38}{section*.19}
 \contentsline {paragraph}{Новость в виде вектора индексов слов}{38}{section*.20}
-\contentsline {section}{Приложение \numberline {H}Пример легких для определения новостей}{39}{Приложение.1.H}
-\contentsline {section}{Приложение \numberline {I}Пример трудных для определения новостей}{40}{Приложение.1.I}
+\contentsline {section}{Приложение \numberline {H}Пример просто анализируемых текстов новостей}{39}{Приложение.1.H}
+\contentsline {section}{Приложение \numberline {I}Пример трудно анализируемых текстов новостей}{40}{Приложение.1.I}

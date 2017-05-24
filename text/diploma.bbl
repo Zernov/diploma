@@ -17,38 +17,9 @@
 \newblock \url{https://github.com/fchollet/keras}. \BibDash
 \newblock 2015.
 
-\bibitem{tools:dropout}
-\selectlanguageifdefined{english}
-Dropout: a simple way to prevent neural networks from overfitting.~/
-  Nitish~Srivastava, Geoffrey~E~Hinton, Alex~Krizhevsky et~al.~//
-  \BibEmph{Journal of Machine Learning Research}. \BibDash
-\newblock 2014. \BibDash
-\newblock Vol.~15, no.~1. \BibDash
-\newblock P.~1929--1958.
-
-\bibitem{tools:lstm}
-\selectlanguageifdefined{english}
-\BibEmph{Hochreiter~Sepp, Schmidhuber~J{\"u}rgen}. Long short-term memory~//
-  \BibEmph{Neural computation}. \BibDash
-\newblock 1997. \BibDash
-\newblock Vol.~9, no.~8. \BibDash
-\newblock P.~1735--1780.
-
-\bibitem{tools:pymorphy2}
-\selectlanguageifdefined{english}
-\BibEmph{Korobov~Mikhail}.
-  \href{http://dx.doi.org/10.1007/978-3-319-26123-2_31}{Morphological Analyzer
-  and Generator for Russian and Ukrainian Languages}~// Analysis of Images,
-  Social Networks and Texts~/ Ed.\ by\ Mikhail~Yu.~Khachay,
-  Natalia~Konstantinova, Alexander~Panchenko et~al. \BibDash
-\newblock Springer International Publishing, 2015. \BibDash
-\newblock Vol.~542 of \BibEmph{Communications in Computer and Information
-  Science}. \BibDash
-\newblock P.~320--332.
-
 \bibitem{tools:nltk}
 \selectlanguageifdefined{english}
-\BibEmph{Loper~Edward, Bird~Steven}.
+\BibEmph{Loper~E.~Bird~S.}
   \href{http://dx.doi.org/10.3115/1118108.1118117}{NLTK: The Natural Language
   Toolkit}~// Proceedings of the ACL-02 Workshop on Effective Tools and
   Methodologies for Teaching Natural Language Processing and Computational
@@ -58,15 +29,42 @@ Dropout: a simple way to prevent neural networks from overfitting.~/
   2002. \BibDash
 \newblock P.~63--70.
 
+\bibitem{tools:pymorphy2}
+\selectlanguageifdefined{english}
+\BibEmph{M.~Korobov}.
+  \href{http://dx.doi.org/10.1007/978-3-319-26123-2_31}{Morphological Analyzer
+  and Generator for Russian and Ukrainian Languages}~// Analysis of Images,
+  Social Networks and Texts. \BibDash
+\newblock Springer International Publishing, 2015. \BibDash
+\newblock Vol.~542 of \BibEmph{Communications in Computer and Information
+  Science}. \BibDash
+\newblock P.~320--332.
+
+\bibitem{tools:lstm}
+\selectlanguageifdefined{english}
+\BibEmph{S.~Hochreiter, J.~Schmidhuber}. Long short-term memory~//
+  \BibEmph{Neural computation}. \BibDash
+\newblock 1997. \BibDash
+\newblock Vol.~9, no.~8. \BibDash
+\newblock P.~1735--1780.
+
+\bibitem{tools:dropout}
+\selectlanguageifdefined{english}
+\BibEmph{Srivastava~N.~Hinton~G.~Krizhevsky~A., I.~Sutskever}. Dropout: a
+  simple way to prevent neural networks from overfitting.~// \BibEmph{Journal
+  of Machine Learning Research}. \BibDash
+\newblock 2014. \BibDash
+\newblock Vol.~15, no.~1. \BibDash
+\newblock P.~1929--1958.
+
 \bibitem{article:text_mining}
 \selectlanguageifdefined{english}
-\BibEmph{Sumathy~K.~L., Chidambaram~M.} Article: Text Mining: Concepts,
-  Applications, Tools and Issues — An Overview~// \BibEmph{International
-  Journal of Computer Applications}. \BibDash
+\BibEmph{Sumathy K.~L.~Chidambaram~M.} Text Mining: Concepts, Applications,
+  Tools and Issues — An Overview~// \BibEmph{International Journal of
+  Computer Applications}. \BibDash
 \newblock 2013. \BibDash October. \BibDash
 \newblock Vol.~80, no.~4. \BibDash
-\newblock P.~29--32. \BibDash
-\newblock Full text available.
+\newblock P.~29--32.
 
 \bibitem{book:financial_market}
 \selectlanguageifdefined{english}
