@@ -56,7 +56,7 @@ def downloadStock(company, date_from, date_to):
 
 def writeStock(stocks_dates, stocks, stocks_count, output):
 
-    with open(output, 'w+', encoding = 'utf8') as csvfile:
+    with open(output, 'w+', encoding = 'utf8', newline='') as csvfile:
         writer = csv.writer(csvfile)
 
         for i in range(stocks_count):

@@ -55,7 +55,7 @@ def connect(news_dates, news, news_count, stocks_dates, stocks, stocks_count):
 
 def writeConnections(connections_dates, connections_news, connections_stocks, connections_count, output):
 
-    with open(output, 'w+', encoding = 'utf8') as csvfile:
+    with open(output, 'w+', encoding = 'utf8', newline='') as csvfile:
         writer = csv.writer(csvfile)
 
         for i in range(connections_count):

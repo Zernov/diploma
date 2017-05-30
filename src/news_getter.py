@@ -117,7 +117,7 @@ def downloadNews(company, amount):
 
 def writeNews(news_dates, news, news_count, output):
 
-    with open(output, 'w+', encoding = 'utf8') as csvfile:
+    with open(output, 'w+', encoding = 'utf8', newline='') as csvfile:
         writer = csv.writer(csvfile)
 
         for i in range(news_count):

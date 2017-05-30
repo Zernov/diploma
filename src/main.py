@@ -40,45 +40,47 @@ import sys
 
 #region System
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-#path = 'D:\\Projects\\Diploma\\src\\'
-path = '/home/zernov/Documents/Projects/diploma/src/'
+path = 'D:\\Projects\\Diploma\\src\\'
+sep = '\\'
+#path = '/home/zernov/Documents/Projects/diploma/src/'
+#sep = '/'
 #endregion
 
 predict_path = ''
 
 #region Learning
-num_words = 3000
+num_words = 5000
 dropout_rate = 0.5
 dimension = 64
 l1_rate = 0.1
 l2_rate = 0.1
-l_rate = 0.05
+l_rate = 0.01
 batch_size = 2
-epochs = 16
+epochs = 32
 validation_split = 0.25
 #endregion
 
 def getData(company, amount, datef, datet):
 
-    #news_dates, news, news_count = downloadNews(company, amount)
-    #writeNews(news_dates, news, news_count, path + 'news/{}.csv'.format(company))
-    #news_dates, news, news_count = readNews(path + 'news/{}.csv'.format(company))
+    news_dates, news, news_count = downloadNews(company, amount)
+    writeNews(news_dates, news, news_count, path + 'news' + sep + '{}.csv'.format(company))
+    #news_dates, news, news_count = readNews(path + 'news' + sep + '{}.csv'.format(company))
 
     stocks_dates, stocks, stocks_count = downloadStock(company, datef, datet)
-    writeStock(stocks_dates, stocks, stocks_count, path + 'stocks/{}.csv'.format(company))
-    #stocks_dates, stocks, stocks_count = readStock(path + 'stocks/{}.csv'.format(company))
+    writeStock(stocks_dates, stocks, stocks_count, path + 'stocks' + sep + '{}.csv'.format(company))
+    #stocks_dates, stocks, stocks_count = readStock(path + 'stocks' + sep + '{}.csv'.format(company))
 
-    #stems_dates, stems, stems_count = stem(news_dates, news, news_count)
-    #writeNews(stems_dates, stems, stems_count, path + 'stems/{}.csv'.format(company))
-    stems_dates, stems, stems_count = readNews(path + 'stems/{}.csv'.format(company))
+    stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+    writeNews(stems_dates, stems, stems_count, path + 'stems' + sep + '{}.csv'.format(company))
+    #stems_dates, stems, stems_count = readNews(path + 'stems' + sep + '{}.csv'.format(company))
 
     connections_dates, connections_news, connections_stocks, connections_count = connect(stems_dates, stems, stems_count, stocks_dates, stocks, stocks_count)
-    writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections/{}.csv'.format(company))
-    #connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'news/{}.csv'.format(company))
+    writeConnections(connections_dates, connections_news, connections_stocks, connections_count, path + 'connections' + sep + '{}.csv'.format(company))
+    #connections_dates, connections_news, connections_stocks, connections_count = readConnections(path + 'connections' + sep + '{}.csv'.format(company))
 
 def readData(company):
 
-    return readConnections(path + 'connections/{}.csv'.format(company))
+    return readConnections(path + 'connections' + sep + '{}.csv'.format(company))
 
 def fit(company, training_X, training_y, testing_X, testing_y):
 
@@ -91,18 +93,18 @@ def fit(company, training_X, training_y, testing_X, testing_y):
     model.compile(optimizer=Adam(lr=l_rate), loss=binary_crossentropy, metrics=[binary_accuracy])
 
     hist = model.fit(training_X, training_y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
-    model.save(path + 'models/{}_model.h5'.format(company))
+    model.save(path + 'models' + sep + '{}_model.h5'.format(company))
 
-    with open(path + 'models/{}_history.txt'.format(company), 'w+', encoding='utf8') as temp:
+    with open(path + 'models' + sep + '{}_history.txt'.format(company), 'w+', encoding='utf8') as temp:
         temp.write(str(hist.history))
 
     score = model.evaluate(testing_X, testing_y, batch_size=batch_size)
-    with open(path + 'models/{}_score.txt'.format(company), 'w+', encoding='utf8') as temp:
+    with open(path + 'models' + sep + '{}_score.txt'.format(company), 'w+', encoding='utf8') as temp:
         temp.write(str(score))
 
 def predict(X, company):
 
-    model = load_model(path + 'models/{}_model.h5'.format(company))
+    model = load_model(path + 'models' + sep + '{}_model.h5'.format(company))
 
     result = model.predict(X)
 
@@ -110,20 +112,22 @@ def predict(X, company):
 
 
 if sys.argv[1] == '-f':
-    company = 'gazprom'
+    company = 'sberbank'
     #company = sys.argv[2]
-    amount = 30
+    amount = 150
     #amount = sys.argv[3]
-    datef = '01/09/2001'
+    datef = '01/09/2015'
     #datef = sys.argv[4]
-    datet = '29/05/2017'
+    datet = '28/05/2017'
     #datet = sys.argv[5]
-    getData(company, amount, datef, datet)
-    connections_dates, connections_news, connections_stocks, connections_count = readData(company)
+    #getData(company, amount, datef, datet)
 else:
-    company = sys.argv[2]
-    predict_path = sys.argv[3]
-    connections_dates, connections_news, connections_stocks, connections_count = readData(company)
+    company = 'sberbank'
+    #company = sys.argv[2]
+    predict_path = 'test.csv'
+    #predict_path = sys.argv[3]
+
+connections_dates, connections_news, connections_stocks, connections_count = readData(company)
 
 tokenizer = Tokenizer(num_words=num_words)
 tokenizer.fit_on_texts(texts=connections_news)
@@ -160,4 +164,7 @@ if sys.argv[1] == '-f':
     fit(company, training_X, training_y, testing_X, testing_y)
 else:
     news_dates, news, news_count = readNews(path + predict_path)
-    predict(tokenizer.texts_to_sequences(news), company)
+    stems_dates, stems, stems_count = stem(news_dates, news, news_count)
+    news_sequences = sequence.pad_sequences(sequences=tokenizer.texts_to_sequences(stems))
+    y = predict(news_sequences, company)
+    print(y)
